@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ivan Filippov](https://up.htmlacademy.ru/adaptive/29/user/2266613).
-* Наставник: `Неизвестно`.
+* Наставник: [Michael Kolotovich](https://up.htmlacademy.ru/profession/frontender/17/adaptive/29/user/225353).
 
 ---
 
