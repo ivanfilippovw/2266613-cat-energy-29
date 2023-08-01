@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo logo" href="index.html">
+      <span class="visually-hidden">Перейти на главную страницу</span>
+      <svg class="logo__image">
+        <use></use>
+      </svg>
+      <svg class="logo__text logo-text">
+        <use></use>
+      </svg>
+    </a>
+    <!-- <a class="main-header__title title" ><span class="title__first-word">Cat</span> energy</a> -->
+    <nav class="main-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active" href="#">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger__button">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <ul class="catalog__list">
+        <li class="catalog__item product-card">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="" alt="" width="68" height="86">
+          </div>
+          <div class="product-card__meta">
+            <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+            <dl class="product-card__info">
+              <div class="product-card__info-wrapper">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+              </div>
+              <div class="product-card__info-wrapper">
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
+              </div>
+              <div class="product-card__info-wrapper">
+                <dt>Цена</dt>
+                <dd>700 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <button></button>
+        </li>
+        <!-- Не сделал остальные карточки, чтобы проверить, правильно ли сделана эта? -->
+
+        <li class="catalog__item product-card-more">
+          <span class="product-card-more__plus-image"></span>
+          <h3 class="product-card-more__title">Показать еще 100500 товаров</h3>
+          <p>На самом деле вкусов гораздо больше!</p>
+          <button class="product-card__button" type="button">Показать все</button>
+        </li>
+      </ul>
+    </section>
+    <section class="additional">
+      <h2 class="additional__title">Дополнительные товары</h2>
+
+      <div class="additional__card additional-card">
+        <h3 class="additional-card__title">Сахарозаменитель</h3>
+        <dl class="additional-card__info">
+          <dt>1 упаковка (100 г)</dt>
+          <dd>200 ₽</dd>
+        </dl>
+        <button class="additional-card__button button" type="button">Заказать</button>
+      </div>
+      <!-- Не сделал остальные карточки, чтобы проверить, правильно ли сделана эта? -->
+
+      <div class="additional__gift-wrapper">
+        <p class="additional__gift-title">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <address class="contacts__address">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603674299267!2d30.3212572706817!3d59.93871835604728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sge!4v1690884655926!5m2!1sru!2sge"
+        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <svg class="main-footer__logo-text logo-text">
+      <use></use>
+    </svg>
+    <!-- <a class="main-footer__title title"><span class="title__first-word">Cat</span> energy</a> -->
+    <ul class="main-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="" target="_blank">
+          <span class="visually-hidden">Перейти в Вконтакте.</span>
+          <svg class="social__icon social__icon--vk">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="" target="_blank">
+          <span class="visually-hidden">Перейти в Youtube.</span>
+          <svg class="social__icon social__icon--youtube">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="" target="_blank">
+          <span class="visually-hidden">Перейти в Телеграм.</span>
+          <svg class="social__icon social__icon--telegram">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__academy academy">
+      <a class="academy__title" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <a class="academy__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">Перейти на сайт HTML Academy</span>
+        <svg class="academy__icon">
+          <use></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

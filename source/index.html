@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo logo" href="#">
+      <span class="visually-hidden">Обновить главную страницу</span>
+      <svg class="logo__image">
+        <use></use>
+      </svg>
+      <svg class="logo__text logo-text">
+        <use></use>
+      </svg>
+    </a>
+    <!-- <a class="main-header__title title" ><span class="title__first-word">Cat</span> energy</a> -->
+    <nav class="main-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active" href="#">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger__button">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="hero">
+      <h1 class="hero__title">Функциональное питание для котов</h1>
+      <p class="hero__slogan">Занялся собой? Займись котом!</p>
+      <img class="hero__image" src="./img/hero-image.png" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм."
+        width="280" height="270">
+      <button class="hero__button button">Подобрать программу</button>
+    </section>
+    <section class="programs">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <article class="programs__item program">
+        <!-- Можно ли сделать это через псевдоэлемент article? -->
+        <svg class="program__icon program__icon--slim">
+          <use></use>
+        </svg>
+        <h3 class="program__title">Похудение</h3>
+        <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+          поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="program__link" href="">Каталог slim</a>
+      </article>
+      <article class="programs__item program">
+        <svg class="program__icon program__icon--pro">
+          <use></use>
+        </svg>
+        <h3 class="program__title">Набор массы</h3>
+        <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+          необходимые мышцы!</p>
+        <a class="program__link" href="">Каталог pro</a>
+      </article>
+    </section>
+    <section class="process">
+      <h2 class="process__title">Как это работает</h2>
+      <ul class="process__list">
+        <li class="process__item">
+          <svg class="process__icom program__icon--leaf">
+            <use></use>
+            <p>Функциональное питание содержит только полезные питательные вещества.</p>
+          </svg>
+        </li>
+        <li class="process__item">
+          <svg class="process__icom program__icon--powder">
+            <use></use>
+            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </svg>
+        </li>
+        <li class="process__item">
+          <svg class="process__icom program__icon--eat">
+            <use></use>
+            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </svg>
+        </li>
+        <li class="process__item">
+          <svg class="process__icom program__icon--watch">
+            <use></use>
+            <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </svg>
+        </li>
+      </ul>
+    </section>
+    <section class="example">
+      <h2 class="example__title">Живой пример</h2>
+      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+      <div class="example__wrapper">
+        <!-- Можно ли тут доп текст сделать через псевдоэлемент? или как это правильно реализовать? -->
+        <p class="example__weight">5 КГ</p>
+        <p class="exapmle__time">60 ДНЕЙ</p>
+      </div>
+      <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
+      <div class="slider">
+        <img class="slider__image" src="./img/example-double.png"
+          alt="Изображение котов, на половину каждый, до и после прохождения программы." width="280" height="256">
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <address class="contacts__address">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603674299267!2d30.3212572706817!3d59.93871835604728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sge!4v1690884655926!5m2!1sru!2sge"
+        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <svg class="main-footer__logo-text logo-text">
+      <use></use>
+    </svg>
+    <!-- <a class="main-footer__title title"><span class="title__first-word">Cat</span> energy</a> -->
+    <ul class="main-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="" target="_blank">
+          <span class="visually-hidden">Перейти в Вконтакте.</span>
+          <svg class="social__icon social__icon--vk">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="" target="_blank">
+          <span class="visually-hidden">Перейти в Youtube.</span>
+          <svg class="social__icon social__icon--youtube">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="" target="_blank">
+          <span class="visually-hidden">Перейти в Телеграм.</span>
+          <svg class="social__icon social__icon--telegram">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__academy academy">
+      <a class="academy__title" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <a class="academy__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">Перейти на сайт HTML Academy</span>
+        <svg class="academy__icon">
+          <use></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
