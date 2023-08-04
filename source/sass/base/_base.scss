@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  //-webkit-text-size-adjust: 100%; применить если не сходится текст по perfect pixel
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  font-family: $font-basic;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $second-text-dark-color;
+  background-color: $base-background-light-color;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}

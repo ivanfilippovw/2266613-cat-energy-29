@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo logo" href="#">
       <span class="visually-hidden">Обновить главную страницу</span>
-      <svg class="logo__text" width="33" height="38" aria-hidden="true" focusable="false">
+      <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
         <use xlink:href="./img/svg/sprite.svg#logo-icon"></use>
       </svg>
-      <svg class="logo__image" width="101" height="18" aria-hidden="true" focusable="false">
+      <svg class="logo__text" width="101" height="18" aria-hidden="true" focusable="false">
         <use xlink:href="./img/svg/sprite.svg#logo-text"></use>
       </svg>
     </a>
@@ -34,7 +34,7 @@
           <a class="navigation__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <button class="hamburger" id="hamburger__button">
+      <button class="main-header__hamburger hamburger" id="hamburger__button">
         <span class="hamburger__line"></span>
         <span class="hamburger__line"></span>
         <span class="hamburger__line"></span>
@@ -42,7 +42,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="hero">
+    <section class="hero container">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
       <img class="hero__image" src="./img/hero/hero-image.png" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм."

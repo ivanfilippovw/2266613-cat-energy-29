@@ -1,0 +1,24 @@
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: $base-light-color;
+  border: none;
+}
+
+.hamburger__line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $base-dark-color;
+}
+
+.hamburger__line:nth-child(1) {
+  transform: translateY(-8px);
+}
+
+.hamburger__line:nth-child(3) {
+  transform: translateY(8px);
+}
