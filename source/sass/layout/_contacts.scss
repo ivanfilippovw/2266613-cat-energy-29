@@ -1,0 +1,46 @@
+.contacts--background {
+  background-color: $second-background-color;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+.contacts__promo {
+  width: 100%;
+  max-width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $contacts-text-color;
+}
+
+.contacts__address {
+  width: 100%;
+  max-width: 140px;
+  font-style: normal;
+  line-height: 1.42;
+}
+
+.contacts__map-wrapper {
+  position: relative;
+}
+
+.contacts__map-image {
+  display: block;
+}
+
+.contacts__map-link {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}

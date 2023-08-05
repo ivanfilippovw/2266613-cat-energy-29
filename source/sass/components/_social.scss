@@ -1,0 +1,9 @@
+.social {
+  @include base-list-style;
+  display: flex;
+  column-gap: 24px;
+}
+
+.social__link {
+  display: inline-flex;
+}

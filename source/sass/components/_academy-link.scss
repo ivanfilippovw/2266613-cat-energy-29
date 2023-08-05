@@ -1,0 +1,19 @@
+.academy-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.academy-link__text {
+  position: absolute;
+  top: 76%;
+  left: 24%;
+  width: 113px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $second-text-dark-color;
+  transform: translate(-50%, -50%);
+}
+
+.academy-link__icon {
+  fill: $svg-icons-color;
+}

@@ -1,0 +1,23 @@
+.catalog {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 20px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  font-family: $font-second;
+  font-size: 36px;
+  line-height: 1;
+  color: $base-text-dark-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.catalog__list {
+  @include base-list-style;
+}
