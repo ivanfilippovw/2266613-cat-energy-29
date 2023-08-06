@@ -12,3 +12,16 @@
   background-color: $branded-color;
   border: none;
 }
+
+.button--order {
+  font-size: 16px;
+  line-height: 1.25;
+  color: $base-text-light-color;
+}
+
+.button--more {
+  font-size: 16px;
+  line-height: 1.25;
+  color: $second-text-dark-color;
+  background-color: $second-background-color;
+}
