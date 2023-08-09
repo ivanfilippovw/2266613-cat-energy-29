@@ -1,0 +1,96 @@
+.additional {
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+}
+
+.additional__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1px;
+  padding-bottom: 36px;
+  font-family: $font-second;
+  font-size: 24px;
+  line-height: 1;
+  color: $base-text-dark-color;
+  border-bottom: 1px solid $third-border-color;
+}
+
+.additional__title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  width: 54px;
+  height: 2px;
+  background-color: $branded-color;
+}
+
+.additional__card {
+  padding-top: 12px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $third-border-color;
+}
+
+.additional__card-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $catalog-product-card-title-color;
+}
+
+.additional__card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.additional__card-info dt {
+  font-size: 14px;
+  line-height: 1;
+  color: $second-text-dark-color;
+}
+
+.additional__card-info dd {
+  margin-left: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: $second-text-dark-color;
+}
+
+.additional__gift-wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 280px;
+  min-height: 290px;
+  padding-top: 187px;
+  padding-right: 61px;
+  padding-left: 58px;
+  background-image: linear-gradient(rgba($branded-color, 0.85), rgba($branded-color, 0.85)), url("./../img/catalog/catalog-gift-background.jpg");
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("./../img/svg/sprite.svg#catalog-gift-icon");
+    transform: translate(-50%, -50%);
+  }
+}
+
+.additional__gift-wrapper p {
+  margin-top: 0;
+  margin-bottom: 43px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $base-text-light-color;
+}

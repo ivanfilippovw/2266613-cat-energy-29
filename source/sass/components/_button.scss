@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  padding: 8px 40px;
+  text-align: center;
+  font-family: $font-second;
+  font-size: 14px;
+  line-height: 1.28; // 1.8 и становится текст ровно в кнопке
+  text-transform: uppercase;
+  color: $base-text-light-color;
+  background-color: $branded-color;
+  border: none;
+}
+
+.button--order {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.button--more {
+  font-size: 16px;
+  line-height: 1.25;
+  color: $second-text-dark-color;
+  background-color: $second-background-color;
+}

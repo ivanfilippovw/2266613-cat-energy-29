@@ -1,1 +1,38 @@
-// Начните писать стили здесь
+// abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// base
+@import "base/base";
+@import "base/container";
+@import "base/fonts";
+@import "base/visually-hidden";
+
+// components
+@import "components/academy-link";
+@import "components/additional";
+@import "components/button";
+@import "components/form";
+@import "components/hamburger";
+@import "components/logo";
+@import "components/more";
+@import "components/navigation";
+@import "components/product-card";
+@import "components/program";
+@import "components/slider";
+@import "components/social";
+
+// main layout
+@import "layout/main-header";
+@import "layout/hero";
+@import "layout/programs";
+@import "layout/process";
+@import "layout/example";
+@import "layout/contacts";
+@import "layout/main-footer";
+
+// form layout
+@import "layout/selection";
+
+// catalog layout
+@import "layout/catalog";

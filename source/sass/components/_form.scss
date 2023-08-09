@@ -1,0 +1,300 @@
+.form__meta {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 14px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  border-bottom: 1px solid $border-color;
+
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 13px;
+  }
+
+  .form__label {
+    font-family: $font-second;
+    font-size: 16px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+
+  .form__input {
+    flex-grow: 1;
+    padding-top: 14px;
+    padding-right: 15px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    font-family: $font-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12;
+    color: $second-text-dark-color;
+    border: 1px solid $input-border-color;
+  }
+
+  .form__input::placeholder {
+    font-family: $font-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+}
+
+.form__program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 13px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+  border-bottom: 1px solid $border-color;
+
+  .form__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  .form__radio-input {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 7.5px;
+    border: 1px solid $third-border-color;
+    border-radius: 50%;
+    appearance: none;
+
+    &:checked {
+      background: $branded-color content-box;
+    }
+  }
+
+  .form__label {
+    font-family: $font-second;
+    font-size: 16px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+}
+
+.form__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 14px;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+
+  .form__contacts-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-family: $font-second;
+    font-size: 24px;
+    line-height: 1.08;
+    color: $base-text-dark-color;
+  }
+
+  .form__contacts-title::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    width: 93px;
+    height: 2px;
+    background-color: $branded-color;
+  }
+
+  .form__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+  }
+
+  .form__label {
+    font-family: $font-second;
+    font-size: 16px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+
+  .form__input {
+    flex-grow: 1;
+    padding-top: 14px;
+    padding-right: 46px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    font-family: $font-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12;
+    color: $second-text-dark-color;
+
+    border: 1px solid $third-border-color;
+  }
+
+  .form__input--email {
+    background-image: url("./../img/sprite.svg#form-email-icon");
+    background-repeat: no-repeat;
+  }
+
+  .form__input::placeholder {
+    font-family: $font-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+}
+
+.form__comment {
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+
+  .form__comments-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-family: $font-second;
+    font-size: 24px;
+    line-height: 1.08;
+    color: $base-text-dark-color;
+  }
+
+  .form__comments-title::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    width: 159px;
+    height: 2px;
+    background-color: $branded-color;
+  }
+
+  .form__textarea {
+    width: 280px;
+    height: 150px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    font-family: $font-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12;
+    color: $second-text-dark-color;
+    border: 1px solid $input-border-color;
+    appearance: none;
+    resize: none;
+  }
+
+  .form__textarea::placeholder {
+    font-family: $font-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+}
+
+.form__additional {
+  padding-right: 20px;
+  padding-bottom: 34px;
+  padding-left: 20px;
+
+  .form__additional-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-family: $font-second;
+    font-size: 24px;
+    line-height: 1.08;
+    color: $base-text-dark-color;
+  }
+
+  .form__list {
+    @include base-list-style;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+  }
+
+  .form__additional-title::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    width: 139px;
+    height: 2px;
+    background-color: $branded-color;
+  }
+
+  .form__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  .form__checkbox-input {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border: 1px solid $third-border-color;
+    appearance: none;
+
+    &:checked {
+      background-image: url("./../img/sprite.svg#form-tick-icon");
+      background-repeat: no-repeat;
+      background-size: 26px 26px;
+    }
+  }
+
+  .form__label {
+    font-family: $font-second;
+    font-size: 16px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $second-text-dark-color;
+  }
+}
+
+.form__button {
+  margin-right: auto;
+  margin-bottom: 21px;
+  margin-left: auto;
+}
+
+.form__button + p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1.14;
+  color: $base-text-dark-color;
+}
