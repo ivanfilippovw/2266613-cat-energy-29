@@ -6,7 +6,7 @@
   text-align: center;
   font-family: $font-second;
   font-size: 14px;
-  line-height: 1.8; // 1.28 по макету, как поставить эту цифру и выравнить текст?
+  line-height: 1.28; // 1.8 и становится текст ровно в кнопке
   text-transform: uppercase;
   color: $base-text-light-color;
   background-color: $branded-color;
@@ -16,7 +16,6 @@
 .button--order {
   font-size: 16px;
   line-height: 1.25;
-  color: $base-text-light-color;
 }
 
 .button--more {

@@ -73,7 +73,7 @@
     margin-right: 0;
     margin-left: 0;
     padding: 7.5px;
-    border: 1px solid $svg-border-color;
+    border: 1px solid $third-border-color;
     border-radius: 50%;
     appearance: none;
 
@@ -148,7 +148,7 @@
     line-height: 1.12;
     color: $second-text-dark-color;
 
-    border: 1px solid $input-border-color;
+    border: 1px solid $third-border-color;
   }
 
   .form__input--email {
@@ -266,7 +266,7 @@
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    border: 1px solid $svg-border-color;
+    border: 1px solid $third-border-color;
     appearance: none;
 
     &:checked {
@@ -295,4 +295,6 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  line-height: 1.14;
+  color: $base-text-dark-color;
 }

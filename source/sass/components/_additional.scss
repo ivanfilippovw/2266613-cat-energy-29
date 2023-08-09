@@ -14,7 +14,7 @@
   font-size: 24px;
   line-height: 1;
   color: $base-text-dark-color;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $third-border-color;
 }
 
 .additional__title::after {
@@ -30,7 +30,7 @@
 .additional__card {
   padding-top: 12px;
   padding-bottom: 19px;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $third-border-color;
 }
 
 .additional__card-title {
