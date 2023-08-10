@@ -6,6 +6,12 @@
   background-color: $example-background-color;
 }
 
+.example > .container {
+  @media (min-width: $mobile-s-above) {
+    width: 560px;
+  }
+}
+
 .example__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -25,6 +31,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 34px;
+
+  @media (min-width: $mobile-xs-above) {
+    justify-content: space-around;
+  }
 }
 
 .example__weight {
@@ -104,4 +114,10 @@
   text-transform: uppercase;
   text-align: center;
   color: $base-text-dark-color;
+}
+
+.example__slider {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
 }

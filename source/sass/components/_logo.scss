@@ -1,6 +1,27 @@
+.logo {
+  @media (min-width: $mobile-s-above) {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+  }
+}
+
+.logo__image {
+  @media (min-width: $mobile-s-above) {
+    display: block;
+    width: 60px;
+    height: 50px;
+  }
+}
+
 .logo__text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $mobile-s-above) {
+    position: static;
+    transform: none;
+  }
 }

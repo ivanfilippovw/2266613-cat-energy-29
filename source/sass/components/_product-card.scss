@@ -1,6 +1,7 @@
 .product-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 13px;
   padding-top: 19px;
   padding-right: 20px;
@@ -11,7 +12,8 @@
 
 .product-card__wrapper {
   display: flex;
-  width: 280px;
+  justify-content: center;
+  width: 100%;
 }
 
 .product-card__image-wrapper {

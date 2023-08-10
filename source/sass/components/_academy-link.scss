@@ -1,6 +1,10 @@
 .academy-link {
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: $mobile-xs-above) {
+    align-items: center;
+  }
 }
 
 .academy-link__text {
@@ -12,10 +16,13 @@
   line-height: 1.25;
   color: $second-text-dark-color;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $mobile-xs-above) {
+    position: initial;
+    transform: initial;
+  }
 }
 
 .academy-link__icon {
-  width: 100%;
-  height: 100%;
   fill: $svg-icons-color;
 }

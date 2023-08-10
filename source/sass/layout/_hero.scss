@@ -2,12 +2,14 @@
   padding-top: 27px;
   padding-right: 20px;
   padding-left: 20px;
-  background-image: linear-gradient(rgba($branded-color, 0.85), rgba($branded-color, 0.85)), url("./../img/hero/hero-background.jpg");
+  background-image: url("./../img/hero/hero-background.png"), linear-gradient(to right, $hero-background-left, $hero-background-right);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto 302px;
+  background-size: 320px auto, 100% 64%;
 }
 
 .hero__title {
+  min-height: 72px;
   margin-top: 0;
   margin-bottom: 25px;
   font-family: $font-second;
@@ -30,5 +32,12 @@
 
 .hero__image {
   display: block;
+  margin-right: auto;
   margin-bottom: 3px;
+  margin-left: auto;
+}
+
+.hero__button {
+  margin-right: auto;
+  margin-left: auto;
 }

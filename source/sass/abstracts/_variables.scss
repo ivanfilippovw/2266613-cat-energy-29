@@ -6,6 +6,8 @@ $font-second: oswald, arial, sans-serif;
 $base-dark-color: #000000;
 $base-light-color: #ffffff;
 $branded-color: #68b738;
+$hero-background-left: #64a73c;
+$hero-background-right: #62a53a;
 
 // text colors
 $base-text-dark-color: #000000;
@@ -23,6 +25,7 @@ $example-background-color: #eaeaea;
 $border-color: #d9d9d9;
 $second-border-color: #ebebeb;
 $third-border-color: #cdcdcd;
+$fourth-border-color: #e6e6e6;
 $input-border-color: #e7e7e7;
 
 // svg colors
@@ -31,3 +34,9 @@ $svg-logo-text-color: #111111;
 
 // item colors
 $more-plus-color: #d3d3d3;
+
+// viewports
+$mobile-xs-above: 481px;
+$mobile-s-above: 641px;
+$mobile-above: 768px;
+$desktop-width: 1440px;

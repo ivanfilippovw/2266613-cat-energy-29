@@ -1,9 +1,14 @@
 .hamburger {
   position: relative;
+  z-index: 2;
   width: 24px;
   height: 24px;
   background-color: $base-light-color;
   border: none;
+
+  @media (min-width: $mobile-above) {
+    display: none;
+  }
 }
 
 .hamburger__line {
@@ -13,6 +18,7 @@
   width: 24px;
   height: 2px;
   background-color: $base-dark-color;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .hamburger__line:nth-child(1) {
@@ -21,4 +27,16 @@
 
 .hamburger__line:nth-child(3) {
   transform: translateY(8px);
+}
+
+body.open .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+
+body.open .hamburger__line:nth-child(1) {
+  transform: translateY(0) rotate(-225deg);
+}
+
+body.open .hamburger__line:nth-child(3) {
+  transform: translateY(0) rotate(225deg);
 }
