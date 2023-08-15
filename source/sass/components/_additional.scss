@@ -7,6 +7,14 @@
   @media (min-width: $mobile-s-above) {
     width: 600px;
   }
+
+  @media (min-width: $mobile-above) {
+    width: 100%;
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+  }
 }
 
 .additional__title {
@@ -19,6 +27,27 @@
   line-height: 1;
   color: $base-text-dark-color;
   border-bottom: 1px solid $third-border-color;
+
+  @media (min-width: $mobile-above) {
+    margin-bottom: 80px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 1;
+    border-bottom: none;
+  }
+}
+
+.additional__title::before {
+  @media (min-width: $mobile-above) {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -6%;
+    width: 6%;
+    height: 2px;
+    background-color: $branded-color;
+  }
 }
 
 .additional__title::after {
@@ -33,12 +62,41 @@
   @media (min-width: $mobile-s-above) {
     right: -40px;
   }
+
+  @media (min-width: $mobile-above) {
+    top: 30%;
+    right: -4%;
+    width: 45%;
+  }
+}
+
+.additional__card-list {
+  @include base-list-style;
+  margin-bottom: 35px;
+
+  @media (min-width: $mobile-above) {
+    margin-bottom: 70px;
+    border: 1px solid $third-border-color;
+  }
 }
 
 .additional__card {
   padding-top: 12px;
   padding-bottom: 19px;
   border-bottom: 1px solid $third-border-color;
+
+  @media (min-width: $mobile-above) {
+    display: grid;
+    grid-template-areas: "title meta" "button button";
+    padding-top: 26px;
+    padding-right: 38px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+
+    &:last-child {
+      border: none;
+    }
+  }
 }
 
 .additional__card-title {
@@ -53,6 +111,14 @@
   @media (min-width: $mobile-xs-above) {
     text-align: center;
   }
+
+  @media (min-width: $mobile-above) {
+    display: inline-block;
+    grid-area: title;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+  }
 }
 
 .additional__card-info {
@@ -62,6 +128,14 @@
 
   @media (min-width: $mobile-xs-above) {
     justify-content: space-around;
+  }
+
+  @media (min-width: $mobile-above) {
+    grid-area: meta;
+    width: 223px;
+    justify-content: flex-end;
+    justify-self: end;
+    column-gap: 49px;
   }
 }
 
@@ -90,6 +164,15 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-width: $mobile-above) {
+    min-width: 707px;
+    min-height: 200px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 421px;
+    background-size: cover;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -113,9 +196,23 @@
   font-size: 16px;
   line-height: 1.25;
   color: $base-text-light-color;
+
+  @media (min-width: $mobile-above) {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .additional__card-button {
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $mobile-above) {
+    grid-area: button;
+
+    &.button--order {
+      width: 100%;
+    }
+  }
 }

@@ -10,6 +10,7 @@
   border-bottom: 1px solid $second-border-color;
 
   @media (min-width: $mobile-above) {
+    row-gap: 32px;
     width: 324px;
     padding-top: 10px;
     padding-right: 37px;

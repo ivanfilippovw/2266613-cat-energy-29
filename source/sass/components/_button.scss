@@ -16,6 +16,10 @@
 .button--order {
   font-size: 16px;
   line-height: 1.25;
+
+  @media (min-width: $mobile-above) {
+    width: 250px;
+  }
 }
 
 .button--more {
@@ -23,6 +27,10 @@
   line-height: 1.25;
   color: $second-text-dark-color;
   background-color: $second-background-color;
+
+  @media (min-width: $mobile-above) {
+    width: 250px;
+  }
 }
 
 .button--hero {
