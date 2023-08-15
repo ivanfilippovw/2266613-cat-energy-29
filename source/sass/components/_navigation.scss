@@ -10,6 +10,7 @@
 .navigation__list {
   @include base-list-style;
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 200%;
   width: 100%;
@@ -81,8 +82,10 @@ body.open .navigation__list {
   }
 
   &--active {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid $branded-color;
+    @media (min-width: $mobile-above) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $branded-color;
+    }
   }
 }
