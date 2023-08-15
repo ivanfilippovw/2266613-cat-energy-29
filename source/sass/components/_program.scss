@@ -6,6 +6,13 @@
   padding-left: 20px;
   background-color: $second-background-color;
 
+  @media (min-width: $mobile-above) {
+    padding-top: 77px;
+    padding-right: 63px;
+    padding-bottom: 53px;
+    padding-left: 52px;
+  }
+
   &--icon_slim::before {
     content: "";
     position: absolute;
@@ -14,6 +21,13 @@
     height: 50px;
     background-color: $branded-color;
     border-radius: 50%;
+
+    @media (min-width: $mobile-above) {
+      top: 92px;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &--icon_slim::after {
@@ -35,6 +49,13 @@
     height: 50px;
     background-color: $branded-color;
     border-radius: 50%;
+
+    @media (min-width: $mobile-above) {
+      top: 92px;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &--icon_pro::after {
@@ -58,14 +79,27 @@
   line-height: 1.54;
   text-transform: uppercase;
   color: $base-text-dark-color;
+
+  @media (min-width: $mobile-above) {
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .program p {
-
   margin-top: 0;
   margin-bottom: 15px;
   padding-bottom: 23px;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $mobile-above) {
+    width: 340px;
+    margin-bottom: 48px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .program__link {
@@ -77,6 +111,12 @@
   text-align: center;
   color: $base-text-dark-color;
 
+
+  @media (min-width: $mobile-above) {
+    font-size: 20px;
+    line-height: 1;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -85,5 +125,9 @@
     background-image: url("./../img/svg/sprite.svg#program-short-arrow-icon");
     background-repeat: no-repeat;
     background-size: 32px 10px;
+
+    @media (min-width: $mobile-above) {
+      background-image: url("./../img/svg/sprite.svg#program-long-arrow-icon");
+    }
   }
 }

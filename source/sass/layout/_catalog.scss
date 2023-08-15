@@ -1,6 +1,11 @@
 .catalog {
   padding-top: 27px;
   border-top: 1px solid $border-color;
+
+  @media (min-width: $mobile-above) {
+    padding-top: 51px;
+    border-top: none;
+  }
 }
 
 .catalog__title {
@@ -18,8 +23,27 @@
   @media (min-width: $mobile-xs-above) {
     text-align: center;
   }
+
+  @media (min-width: $mobile-above) {
+    margin-bottom: 84px;
+    padding-right: 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    border-bottom: none;
+  }
 }
 
 .catalog__list {
   @include base-list-style;
+
+  @media (min-width: $mobile-above) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }

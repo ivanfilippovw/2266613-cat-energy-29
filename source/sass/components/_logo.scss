@@ -20,7 +20,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media (min-width: $mobile-s-above) {
+  @media (min-width: $mobile-above) {
     position: static;
     transform: none;
   }
