@@ -13,6 +13,11 @@
     padding-bottom: 60px;
     border-top: none;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
 }
 
 .selection__title {
@@ -22,6 +27,7 @@
   padding-left: 20px;
   font-family: $font-second;
   font-size: 36px;
+  font-weight: 400;
   line-height: 1;
   color: $base-text-dark-color;
 
@@ -30,7 +36,12 @@
     padding-right: 70px;
     padding-left: 70px;
     font-size: 60px;
-    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 55px;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }
 
@@ -54,5 +65,9 @@
     padding-left: 0;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-left: 110px;
   }
 }

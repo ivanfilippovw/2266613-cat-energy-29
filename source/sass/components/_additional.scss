@@ -15,6 +15,17 @@
     padding-bottom: 75px;
     padding-left: 30px;
   }
+
+  @media (min-width: $desktop-above) {
+    display: grid;
+    grid-template-areas: "title title" "list gift";
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+    padding-right: 110px;
+    padding-bottom: 87px;
+    padding-left: 110px;
+  }
 }
 
 .additional__title {
@@ -35,6 +46,10 @@
     font-size: 36px;
     line-height: 1;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-above) {
+    grid-area: title;
   }
 }
 
@@ -68,6 +83,10 @@
     right: -4%;
     width: 45%;
   }
+
+  @media (min-width: $tablet-above) {
+    right: -2%;
+  }
 }
 
 .additional__card-list {
@@ -77,6 +96,14 @@
   @media (min-width: $mobile-above) {
     margin-bottom: 70px;
     border: 1px solid $third-border-color;
+  }
+
+  @media (min-width: $desktop-above) {
+    display: inline-block;
+    width: 896px;
+    margin-right: 74px;
+    margin-bottom: 0;
+    border: none;
   }
 }
 
@@ -97,6 +124,23 @@
       border: none;
     }
   }
+
+  @media (min-width: $desktop-above) {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 17px;
+    padding-left: 0;
+  }
+}
+
+.additional__card:first-child {
+  border-top: 1px solid $third-border-color;
+}
+
+.additional__card:last-child {
+  border-bottom: 1px solid $third-border-color;
 }
 
 .additional__card-title {
@@ -104,6 +148,7 @@
   margin-bottom: 13px;
   font-family: $font-second;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   color: $catalog-product-card-title-color;
@@ -118,6 +163,11 @@
     font-size: 20px;
     line-height: 1;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-above) {
+    width: 325px;
+    margin-bottom: 0;
   }
 }
 
@@ -137,12 +187,26 @@
     justify-self: end;
     column-gap: 49px;
   }
+
+  @media (min-width: $desktop-above) {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .additional__card-info dt {
   font-size: 14px;
   line-height: 1;
   color: $second-text-dark-color;
+
+  @media (min-width: $desktop-above) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .additional__card-info dd {
@@ -150,6 +214,11 @@
   font-size: 14px;
   line-height: 1;
   color: $second-text-dark-color;
+
+  @media (min-width: $desktop-above) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .additional__gift-wrapper {
@@ -171,6 +240,19 @@
     padding-bottom: 70px;
     padding-left: 421px;
     background-size: cover;
+  }
+
+  @media (min-width: $desktop-above) {
+    display: inline-block;
+    width: 245px;
+    height: 288px;
+    min-width: 245px;
+    min-height: 288px;
+    padding-top: 187px;
+    padding-right: 61px;
+    padding-bottom: 0;
+    padding-left: 58px;
+    background-size: initial;
   }
 
   &::before {
@@ -202,17 +284,25 @@
     margin-bottom: 0;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop-above) {
+    margin-right: auto;
+    margin-bottom: 43px;
+    margin-left: auto;
+  }
 }
 
-.additional__card-button {
+.additional__card-button.button--order {
   margin-right: auto;
   margin-left: auto;
 
   @media (min-width: $mobile-above) {
     grid-area: button;
+    width: 100%;
+  }
 
-    &.button--order {
-      width: 100%;
-    }
+  @media (min-width: $desktop-above) {
+    width: 244px;
+    height: 40px;
   }
 }

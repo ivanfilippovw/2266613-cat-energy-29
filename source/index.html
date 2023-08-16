@@ -12,36 +12,36 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container">
-    <a class="main-header__logo logo" href="#">
-      <span class="visually-hidden">Обновить главную страницу</span>
-      <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
-        <use xlink:href="./img/svg/sprite.svg#logo-icon"></use>
-      </svg>
-      <svg class="logo__text" width="101" height="18" aria-hidden="true" focusable="false">
-        <use xlink:href="./img/svg/sprite.svg#logo-text"></use>
-      </svg>
-    </a>
-    <nav class="main-header__navigation navigation">
-      <ul class="navigation__list" id="menu">
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--active" href="#">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-      <button class="main-header__hamburger hamburger" id="hamburger__button">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-      </button>
-    </nav>
-  </header>
-  <main class="main-container">
+  <div class="page__body-hero-wrapper">
+    <header class="main-header container">
+      <a class="main-header__logo logo" href="#">
+        <span class="visually-hidden">Обновить главную страницу</span>
+        <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/svg/sprite.svg#logo-icon"></use>
+        </svg>
+        <svg class="logo__text" width="101" height="18" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/svg/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+      <nav class="main-header__navigation navigation">
+        <ul class="navigation__list" id="menu">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--viewport_desktop navigation__link--active" href="#">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--viewport_desktop " href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--viewport_desktop" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+        <button class="main-header__hamburger hamburger" id="hamburger__button">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </nav>
+    </header>
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">Функциональное питание для котов</h1>
@@ -51,6 +51,8 @@
         <a class="hero__button button button--hero" href="form.html">Подобрать программу</a>
       </div>
     </section>
+  </div>
+  <main class="main-container">
     <section class="programs container">
       <h2 class="visually-hidden">Программы питания</h2>
       <article class="programs__item program program--icon_slim">
@@ -85,23 +87,25 @@
     </section>
     <section class="example">
       <div class="container">
-        <h2 class="example__title">Живой пример</h2>
-        <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="example__wrapper">
-          <dl class="example__weight">
-            <dt>5 КГ</dt>
-            <dd>снижение веса</dd>
-          </dl>
-          <dl class="example__time">
-            <dt>60 ДНЕЙ</dt>
-            <dd>затрачено времени</dd>
-          </dl>
-        </div>
+        <div class="example__info-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example__wrapper">
+            <dl class="example__weight">
+              <dt>5 КГ</dt>
+              <dd>снижение веса</dd>
+            </dl>
+            <dl class="example__time">
+              <dt>60 ДНЕЙ</dt>
+              <dd>затрачено времени</dd>
+            </dl>
+          </div>
           <div class="example__cost-wrapper">
             <p class="example__cost">Затраты на питание:</p>
             <p class="example__cost example__cost--mobile">&nbsp;15 000 РУБ.</p>
           </div>
+        </div>
         <div class="example__slider slider">
           <img class="slider__image" src="./img/example/example-double.png"
             alt="Изображение котов, на половину каждый, до и после прохождения программы." width="280" height="256">

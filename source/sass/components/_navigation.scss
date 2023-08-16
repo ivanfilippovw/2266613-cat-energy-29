@@ -35,6 +35,10 @@
     max-width: 436px;
     margin-top: 0;
   }
+
+  @media (min-width: $desktop-above) {
+    background-color: transparent;
+  }
 }
 
 body.open .navigation__list {
@@ -87,5 +91,19 @@ body.open .navigation__list {
       padding-bottom: 10px;
       border-bottom: 2px solid $branded-color;
     }
+
+    @media (min-width: $desktop-above) {
+      border-bottom-color: $base-light-color;
+    }
+  }
+
+  @media (min-width: $desktop-above) {
+    color: $third-text-dark-color;
+  }
+}
+
+.navigation__link--viewport_desktop {
+  @media (min-width: $desktop-above) {
+    color: $base-light-color;
   }
 }

@@ -6,6 +6,11 @@
     padding-top: 51px;
     border-top: none;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-top: 60px;
+    padding-bottom: 76px;
+  }
 }
 
 .catalog__title {
@@ -34,6 +39,11 @@
     text-align: left;
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
 
 .catalog__list {
@@ -45,5 +55,14 @@
     gap: 60px;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  @media (min-width: $tablet-xs-above) {
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-above) {
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }

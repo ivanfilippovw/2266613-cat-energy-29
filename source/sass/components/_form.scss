@@ -8,6 +8,11 @@
     font-size: 20px;
     line-height: 1.5;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
 
 .form__meta {
@@ -26,6 +31,14 @@
     padding-bottom: 31px;
     padding-left: 0;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-above) {
+    display: inline-flex;
+    width: 560px;
+    margin-right: 80px;
+    padding-bottom: 0;
+    vertical-align: top;
   }
 }
 
@@ -99,6 +112,13 @@
     padding-left: 27px;
     border: 1px solid $border-color;
   }
+
+  @media (min-width: $desktop-above) {
+    display: inline-flex;
+    justify-content: center;
+    width: 570px;
+    min-height: 202px; // макет 196px
+  }
 }
 
 .form__program > .form__program-wrapper {
@@ -117,6 +137,12 @@
   border: 1px solid $third-border-color;
   border-radius: 50%;
   appearance: none;
+
+  @media (min-width: $desktop-above) {
+    width: 40px;
+    height: 40px;
+    padding: 9.5px;
+  }
 
   &:checked {
     background: $branded-color content-box;
@@ -146,6 +172,15 @@
     padding-bottom: 65px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-above) {
+    display: grid;
+    grid-template-areas: "title title" "email phone";
+    row-gap: 76px;
+    column-gap: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .form__contacts-title {
@@ -155,12 +190,18 @@
   font-family: $font-second;
   font-size: 24px;
   line-height: 1.08;
+  font-weight: 400;
   color: $base-text-dark-color;
 
   @media (min-width: $mobile-above) {
     margin-bottom: 56px;
     font-size: 36px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-above) {
+    grid-area: title;
+    margin-bottom: 0;
   }
 }
 
@@ -191,8 +232,16 @@
 
   @media (min-width: $mobile-above) {
     top: 60%;
-    right: -11%;
+    right: -8.5vw;
     width: 20%;
+  }
+
+  @media (min-width: $tablet-s-above) {
+    right: -7vw;
+  }
+
+  @media (min-width: $tablet-above) {
+    right: -5vw;
   }
 }
 
@@ -262,7 +311,12 @@
     padding-bottom: 65px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-bottom: 70px;
+  }
 }
+
 
 .form__comments-title {
   position: relative;
@@ -270,6 +324,7 @@
   margin-bottom: 35px;
   font-family: $font-second;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.08;
   color: $base-text-dark-color;
 
@@ -277,6 +332,10 @@
     margin-bottom: 87px;
     font-size: 36px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 78px;
   }
 }
 
@@ -307,8 +366,16 @@
 
   @media (min-width: $mobile-above) {
     top: 60%;
-    right: -11%;
+    right: -8.5vw;
     width: 75%;
+  }
+
+  @media (min-width: $tablet-s-above) {
+    right: -7vw;
+  }
+
+  @media (min-width: $tablet-above) {
+    right: -5vw;
   }
 }
 
@@ -365,6 +432,10 @@
     padding-bottom: 54px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-bottom: 61px;
+  }
 }
 
 .form__additional-title {
@@ -373,6 +444,7 @@
   margin-bottom: 35px;
   font-family: $font-second;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.08;
   color: $base-text-dark-color;
 
@@ -410,12 +482,20 @@
 
   @media (min-width: $mobile-above) {
     top: 60%;
-    right: -11%;
+    right: -8.5vw;
     width: 70%;
+  }
+
+  @media (min-width: $tablet-s-above) {
+    right: -7vw;
+  }
+
+  @media (min-width: $tablet-above) {
+    right: -5vw;
   }
 }
 
-.form__list {
+.form__additional-list {
   @include base-list-style;
   display: flex;
   flex-direction: column;
@@ -427,9 +507,13 @@
     column-gap: 123px;
     row-gap: 32px;
   }
+
+  @media (min-width: $desktop-above) {
+    column-gap: 0;
+  }
 }
 
-.form__list > .form__additional-wrapper {
+.form__additional-list > .form__additional-wrapper {
   display: flex;
   align-items: center;
   column-gap: 15px;
@@ -438,6 +522,26 @@
     column-gap: 20px;
     width: 221px;
   }
+
+  @media (min-width: $desktop-above) {
+    width: initial;
+  }
+}
+
+.form__additional-list > .form__additional-wrapper:nth-child(1) {
+  margin-right: 104px;
+}
+
+.form__additional-list > .form__additional-wrapper:nth-child(2) {
+  margin-right: 136px;
+}
+
+.form__additional-list > .form__additional-wrapper:nth-child(3) {
+  margin-right: 197px;
+}
+
+.form__additional-list > .form__additional-wrapper:nth-child(4) {
+  margin-right: 0;
 }
 
 .form__checkbox-input {
@@ -471,6 +575,11 @@
   @media (min-width: $mobile-above) {
     display: inline-block;
     margin-right: 64px;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 

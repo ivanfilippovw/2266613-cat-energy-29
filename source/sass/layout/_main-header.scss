@@ -19,4 +19,10 @@
     padding-right: 34px;
     padding-left: 30px;
   }
+
+  @media (min-width: $desktop-above) {
+    padding-top: 55px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }

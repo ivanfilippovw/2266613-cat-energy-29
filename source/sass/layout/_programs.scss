@@ -15,4 +15,14 @@
     padding-bottom: 45px;
     padding-left: 30px;
   }
+
+  @media (min-width: $desktop-above) {
+    flex-direction: row;
+    column-gap: 80px;
+    width: 100%;
+    padding-top: 82px;
+    padding-right: 110px;
+    padding-bottom: 71px;
+    padding-left: 110px;
+  }
 }

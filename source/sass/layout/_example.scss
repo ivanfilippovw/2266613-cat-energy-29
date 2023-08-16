@@ -13,6 +13,14 @@
     padding-left: 30px;
     background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 55%, $example-background-color 55%, $example-background-color 100%);
   }
+
+  @media (min-width: $desktop-above) {
+    padding-top: 0;
+    padding-right: 110px;
+    padding-bottom: 75px;
+    padding-left: 110px;
+    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 22%, $example-background-color 22%, $example-background-color 100%);
+  }
 }
 
 .example > .container {
@@ -22,6 +30,15 @@
 
   @media (min-width: $mobile-above) {
     width: 100%;
+  }
+}
+
+.example__info-wrapper {
+  @media (min-width: $desktop-above) {
+    display: inline-block;
+    vertical-align: top;
+    width: 436px;
+    margin-right: 219px;
   }
 }
 
@@ -39,6 +56,10 @@
     font-size: 60px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 146px;
+  }
 }
 
 .example p:not([class]) {
@@ -48,6 +69,10 @@
   @media (min-width: $mobile-above) {
     margin-bottom: 55px;
     color: $second-text-dark-color;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 69px;
   }
 }
 
@@ -63,6 +88,10 @@
   @media (min-width: $mobile-above) {
     display: inline-flex;
     column-gap: 43px;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 60px;
   }
 }
 
@@ -117,6 +146,10 @@
     color: $second-text-dark-color;
     background-color: $base-background-light-color;
   }
+
+  @media (min-width: $desktop-above) {
+    background-color: $example-background-color;
+  }
 }
 
 .example__time {
@@ -170,6 +203,10 @@
     color: $second-text-dark-color;
     background-color: $base-background-light-color;
   }
+
+  @media (min-width: $desktop-above) {
+    background-color: $example-background-color;
+  }
 }
 
 .example__cost-wrapper {
@@ -183,6 +220,13 @@
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-above) {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
   }
 }
 
@@ -211,5 +255,11 @@
   @media (min-width: $mobile-above) {
     width: 560px;
     margin-top: 104px;
+  }
+
+  @media (min-width: $desktop-above) {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
   }
 }

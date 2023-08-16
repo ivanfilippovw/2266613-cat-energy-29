@@ -19,6 +19,11 @@
     padding-left: 20px;
     border: 2px solid $second-background-color;
   }
+
+  @media (min-width: $desktop-above) {
+    width: 245px;
+    min-height: 404px;
+  }
 }
 
 .more__plus {
@@ -34,6 +39,10 @@
     width: 60px;
     height: 60px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 40px;
   }
 
   &::before {
@@ -85,6 +94,10 @@
     font-size: 20px;
     line-height: 1.2;
   }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 26px;
+  }
 }
 
 .more p {
@@ -101,4 +114,10 @@
     font-size: 16px;
     line-height: 1.12;
   }
+}
+
+.more__button.button--more {
+  width: 169px;
+  height: 40px;
+  padding: 0;
 }
