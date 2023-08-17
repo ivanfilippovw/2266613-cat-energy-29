@@ -25,4 +25,8 @@
     padding-bottom: 71px;
     padding-left: 110px;
   }
+
+  @media (min-width: $desktop-m-above) {
+    justify-content: center;
+  }
 }

@@ -106,15 +106,17 @@
   }
 
   &::after {
-    content: "1";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    font-family: $font-second;
-    font-size: 280px;
-    line-height: 1;
-    color: $second-background-color;
+    @media (min-width) {
+      content: "1";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      font-family: $font-second;
+      font-size: 280px;
+      line-height: 1;
+      color: $second-background-color;
+    }
   }
 }
 
@@ -138,15 +140,17 @@
   }
 
   &::after {
-    content: "2";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    font-family: $font-second;
-    font-size: 280px;
-    line-height: 1;
-    color: $second-background-color;
+    @media (min-width) {
+      content: "2";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      font-family: $font-second;
+      font-size: 280px;
+      line-height: 1;
+      color: $second-background-color;
+    }
   }
 }
 
@@ -168,15 +172,17 @@
   }
 
   &::after {
-    content: "3";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    font-family: $font-second;
-    font-size: 280px;
-    line-height: 1;
-    color: $second-background-color;
+    @media (min-width) {
+      content: "3";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      font-family: $font-second;
+      font-size: 280px;
+      line-height: 1;
+      color: $second-background-color;
+    }
   }
 }
 
@@ -194,15 +200,17 @@
   }
 
   &::after {
-    content: "4";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    font-family: $font-second;
-    font-size: 280px;
-    line-height: 1;
-    color: $second-background-color;
+    @media (min-width) {
+      content: "4";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      font-family: $font-second;
+      font-size: 280px;
+      line-height: 1;
+      color: $second-background-color;
+    }
   }
 }
 

@@ -106,9 +106,19 @@
             <p class="example__cost example__cost--mobile">&nbsp;15 000 РУБ.</p>
           </div>
         </div>
-        <div class="example__slider slider">
-          <img class="slider__image" src="./img/example/example-double.png"
-            alt="Изображение котов, на половину каждый, до и после прохождения программы." width="280" height="256">
+        <div class="example__slider-container slider" data-slifer-container>
+          <div class="slider__before-wrapper" style="width: 50%;" data-cat-thin>
+            <img class="slider__before-image-mobile" src="img/example/example-before@1x.png" alt="">
+            <img class="slider__before-image-tablet" src="img/example/example-before-tablet@1x.png" alt="">
+          </div>
+          <div class="slider__button-wrapper">
+            <button class="slider__button" type="button" data-slider-button></button>
+            <span class="slider__button-line"></span>
+          </div>
+          <div class="slider__after-wrapper" data-cat-fat>
+            <img class="slider__after-image-mobile" src="img/example/example-after@1x.png" alt="">
+            <img class="slider__after-image-tablet" src="img/example/example-after-tablet@1x.png" alt="">
+          </div>
         </div>
       </div>
     </section>
