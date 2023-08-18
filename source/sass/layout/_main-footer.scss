@@ -5,6 +5,16 @@
   align-items: center;
   padding: 40px 20px;
   background-color: $second-background-color;
+
+  @media (min-width: $mobile-above) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-above) {
+    padding: 66px 110px;
+  }
 }
 
 .main-footer__social {
@@ -17,8 +27,20 @@
   padding-bottom: 20px;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $mobile-above) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .main-footer__academy-link {
   margin-left: auto;
+
+  @media (min-width: $mobile-xs-above) {
+    margin-left: initial;
+  }
 }

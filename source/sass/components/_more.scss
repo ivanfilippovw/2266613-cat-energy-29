@@ -1,9 +1,29 @@
 .more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 25px;
   padding-right: 20px;
   padding-bottom: 25px;
   padding-left: 21px;
   border-bottom: 1px solid $second-border-color;
+
+  @media (min-width: $mobile-above) {
+    justify-content: center;
+    width: 324px;
+    min-height: 429px;
+    margin-top: auto;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border: 2px solid $second-background-color;
+  }
+
+  @media (min-width: $desktop-above) {
+    width: 245px;
+    min-height: 404px;
+  }
 }
 
 .more__plus {
@@ -15,6 +35,16 @@
   margin-bottom: 23px;
   margin-left: auto;
 
+  @media (min-width: $mobile-above) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 40px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -25,6 +55,10 @@
     height: 2px;
     background-color: $more-plus-color;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $mobile-above) {
+      width: 60px;
+    }
   }
 
   &::after {
@@ -37,20 +71,33 @@
     height: 2px;
     background-color: $more-plus-color;
     transform: translate(-50%, -50%) rotate(90deg);
+
+    @media (min-width: $mobile-above) {
+      width: 60px;
+    }
   }
 }
 
 .more__title {
   margin-top: 0;
   margin-bottom: 8px;
-
-
   text-align: center;
   font-family: $font-second;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $third-text-dark-color;
+
+  @media (min-width: $mobile-above) {
+    width: 134px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 26px;
+  }
 }
 
 .more p {
@@ -60,4 +107,17 @@
   font-size: 12px;
   line-height: 1.33;
   color: $second-text-dark-color;
+
+  @media (min-width: $mobile-above) {
+    width: 170px;
+    margin-bottom: auto;
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
+
+.more__button.button--more {
+  width: 169px;
+  height: 40px;
+  padding: 0;
 }

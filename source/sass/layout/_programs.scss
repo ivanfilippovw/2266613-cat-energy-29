@@ -3,4 +3,30 @@
   flex-direction: column;
   row-gap: 20px;
   padding: 20px;
+
+  @media (min-width: $mobile-s-above) {
+    width: 600px;
+  }
+
+  @media (min-width: $mobile-above) {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-above) {
+    flex-direction: row;
+    column-gap: 80px;
+    width: 100%;
+    padding-top: 82px;
+    padding-right: 110px;
+    padding-bottom: 71px;
+    padding-left: 110px;
+  }
+
+  @media (min-width: $desktop-m-above) {
+    justify-content: center;
+  }
 }

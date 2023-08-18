@@ -1,17 +1,41 @@
 .product-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 13px;
   padding-top: 19px;
   padding-right: 20px;
   padding-bottom: 25px;
   padding-left: 20px;
   border-bottom: 1px solid $second-border-color;
+
+  @media (min-width: $mobile-above) {
+    row-gap: 32px;
+    width: 324px;
+    padding-top: 10px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-left: 37px;
+    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 20%, $second-background-color 20%, $second-background-color 100%);
+  }
+
+  @media (min-width: $desktop-above) {
+    width: 245px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
 }
 
 .product-card__wrapper {
   display: flex;
-  width: 280px;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $mobile-above) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+  }
 }
 
 .product-card__image-wrapper {
@@ -20,19 +44,34 @@
   align-items: flex-end;
   width: 100%;
   max-width: 140px;
+
+  @media (min-width: $mobile-above) {
+    max-width: 200px;
+    min-height: 210px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 12px;
+  }
 }
 
 .product-card__image {
   display: block;
-
-  &--position {
-    margin-bottom: 12px;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 .product-card__meta {
   width: 100%;
   max-width: 140px;
+
+  @media (min-width: $mobile-above) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+  }
 }
 
 .product-card__title {
@@ -44,22 +83,59 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: $catalog-product-card-title-color;
+
+  @media (min-width: $mobile-above) {
+    width: 135px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-bottom: 23.4px;
+  }
 }
 
 .product-card__info {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $mobile-above) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px; // по макету первый гэп 5, второй 7...... для pp на margin переделать видимо
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-above) {
+    width: 169px;
+  }
 }
 
 .product-card__info div {
   display: flex;
   justify-content: space-between;
+
+
+  @media (min-width: $mobile-above) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid $third-border-color;
+  }
 }
 
 .product-card__info dt {
   display: inline;
   font-size: 12px;
   line-height: 1.33;
+  color: $second-text-dark-color;
+
+  @media (min-width: $mobile-above) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .product-card__info dd {
@@ -67,4 +143,15 @@
   margin-left: 0;
   font-size: 12px;
   line-height: 1.33;
+  color: $second-text-dark-color;
+
+  @media (min-width: $mobile-above) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.product-card__button.button--order {
+  width: 169px;
+  height: 40px;
 }

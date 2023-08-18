@@ -1,13 +1,29 @@
 .hero {
+  position: relative;
   padding-top: 27px;
   padding-right: 20px;
   padding-left: 20px;
-  background-image: linear-gradient(rgba($branded-color, 0.85), rgba($branded-color, 0.85)), url("./../img/hero/hero-background.jpg");
+  background-image: url("./../img/hero/hero-background.png"), linear-gradient(to right, $hero-background-left, $hero-background-right);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto 302px;
+  background-size: 320px auto, 100% 64%;
+
+  @media (min-width: $mobile-above) {
+    padding-top: 51px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-above) {
+    padding-top: 96px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
 
 .hero__title {
+  min-height: 72px;
   margin-top: 0;
   margin-bottom: 25px;
   font-family: $font-second;
@@ -15,6 +31,17 @@
   line-height: 1;
   text-align: center;
   color: $base-text-light-color;
+
+  @media (min-width: $mobile-above) {
+    width: 416px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: $base-text-dark-color;
+  }
 }
 
 .hero__slogan {
@@ -26,9 +53,70 @@
   text-align: center;
   color: $base-text-light-color;
   text-transform: uppercase;
+
+  @media (min-width: $mobile-above) {
+    margin-bottom: 21px;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    color: $base-text-dark-color;
+  }
 }
 
 .hero__image {
   display: block;
+  margin-right: auto;
   margin-bottom: 3px;
+  margin-left: auto;
+
+  @media (min-width: $mobile-above) {
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-above) {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 552px;
+    height: 499px;
+  }
 }
+
+.hero__button {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $mobile-above) {
+    position: absolute;
+    top: 33%;
+    left: 15%;
+  }
+
+  @media (min-width: $desktop-above) {
+    position: absolute;
+    top: 115%;
+    left: 13.8%;
+  }
+}
+
+.page__body-hero-wrapper {
+  @media (min-width: $desktop-above) {
+    min-height: 694px;
+    background-image: url("./../img/hero/hero-desktop-background.png"), linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 50%, $hero-background-left 50%, $hero-background-right 100%);
+    background-position-x: 100%, 100%;
+    background-repeat: no-repeat;
+    background-size: contain, 100% 694px;
+  }
+}
+
+// .page__body-hero-wrapper {
+//   @media (min-width: $desktop-above) {
+//     min-height: 694px;
+//     background-image: linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 100%), url("./../img/hero/hero-desktop-background.png");
+//     background-repeat: no-repeat;
+//     background-size: 50% 100%, cover;
+//   }
+// }

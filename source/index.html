@@ -12,43 +12,47 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container">
-    <a class="main-header__logo logo" href="#">
-      <span class="visually-hidden">Обновить главную страницу</span>
-      <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
-        <use xlink:href="./img/svg/sprite.svg#logo-icon"></use>
-      </svg>
-      <svg class="logo__text" width="101" height="18" aria-hidden="true" focusable="false">
-        <use xlink:href="./img/svg/sprite.svg#logo-text"></use>
-      </svg>
-    </a>
-    <nav class="main-header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--active" href="#">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-      <button class="main-header__hamburger hamburger" id="hamburger__button">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-      </button>
-    </nav>
-  </header>
-  <main class="main-container">
-    <section class="hero container">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="./img/hero/hero-image.png" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм."
-        width="280" height="270">
-      <a class="button" href="form.html">Подобрать программу</a>
+  <div class="page__body-hero-wrapper">
+    <header class="main-header container">
+      <a class="main-header__logo logo" href="#">
+        <span class="visually-hidden">Обновить главную страницу</span>
+        <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/svg/sprite.svg#logo-icon"></use>
+        </svg>
+        <svg class="logo__text" width="101" height="18" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/svg/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+      <nav class="main-header__navigation navigation">
+        <ul class="navigation__list" id="menu">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--viewport_desktop navigation__link--active" href="#">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--viewport_desktop " href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--viewport_desktop" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+        <button class="main-header__hamburger hamburger" id="hamburger__button">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <img class="hero__image" src="./img/hero/hero-image.png" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм."
+          width="280" height="270">
+        <a class="hero__button button button--hero" href="form.html">Подобрать программу</a>
+      </div>
     </section>
+  </div>
+  <main class="main-container">
     <section class="programs container">
       <h2 class="visually-hidden">Программы питания</h2>
       <article class="programs__item program program--icon_slim">
@@ -81,31 +85,48 @@
         </li>
       </ul>
     </section>
-    <section class="example container">
-      <h2 class="example__title">Живой пример</h2>
-      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <div class="example__wrapper">
-        <dl class="example__weight">
-          <dt>5 КГ</dt>
-          <dd>снижение веса</dd>
-        </dl>
-        <dl class="example__time">
-          <dt>60 ДНЕЙ</dt>
-          <dd>затрачено времени</dd>
-        </dl>
-      </div>
-      <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
-      <div class="slider">
-        <img class="slider__image" src="./img/example/example-double.png"
-          alt="Изображение котов, на половину каждый, до и после прохождения программы." width="280" height="256">
+    <section class="example">
+      <div class="container">
+        <div class="example__info-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example__wrapper">
+            <dl class="example__weight">
+              <dt>5 КГ</dt>
+              <dd>снижение веса</dd>
+            </dl>
+            <dl class="example__time">
+              <dt>60 ДНЕЙ</dt>
+              <dd>затрачено времени</dd>
+            </dl>
+          </div>
+          <div class="example__cost-wrapper">
+            <p class="example__cost">Затраты на питание:</p>
+            <p class="example__cost example__cost--mobile">&nbsp;15 000 РУБ.</p>
+          </div>
+        </div>
+        <div class="example__slider-container slider" data-slifer-container>
+          <div class="slider__before-wrapper" style="width: 50%;" data-cat-thin>
+            <img class="slider__before-image-mobile" src="img/example/example-before@1x.png" alt="">
+            <img class="slider__before-image-tablet" src="img/example/example-before-tablet@1x.png" alt="">
+          </div>
+          <div class="slider__button-wrapper">
+            <button class="slider__button" type="button" data-slider-button></button>
+            <span class="slider__button-line"></span>
+          </div>
+          <div class="slider__after-wrapper" data-cat-fat>
+            <img class="slider__after-image-mobile" src="img/example/example-after@1x.png" alt="">
+            <img class="slider__after-image-tablet" src="img/example/example-after-tablet@1x.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
     <section class="contacts container">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
         <p class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</p>
-        <address class="contacts__address">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map-wrapper">
         <img class="contacts__map-image" src="./img/contacts/contacts-map.png"
@@ -160,6 +181,7 @@
       </svg>
     </a>
   </footer>
+  <script defer src="js/index.js"></script>
 </body>
 
 </html>

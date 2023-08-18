@@ -13,6 +13,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 100%;
   margin: 0;
   font-family: $font-basic;
@@ -20,6 +21,12 @@ body {
   line-height: 1.28;
   color: $second-text-dark-color;
   background-color: $base-background-light-color;
+
+  @media (min-width: $mobile-above) {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $base-text-dark-color;
+  }
 }
 
 .main-container {

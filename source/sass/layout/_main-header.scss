@@ -6,4 +6,23 @@
   padding-right: 21px;
   padding-bottom: 14px;
   padding-left: 20px;
+
+  @media (min-width: $mobile-s-above) {
+    width: 600px;
+  }
+
+  @media (min-width: $mobile-above) {
+    position: static;
+    column-gap: 94px;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 34px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-above) {
+    padding-top: 55px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
