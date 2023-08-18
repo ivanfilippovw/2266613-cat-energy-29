@@ -105,8 +105,18 @@
 .page__body-hero-wrapper {
   @media (min-width: $desktop-above) {
     min-height: 694px;
-    background-image: linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 100%), url("./../img/hero/hero-desktop-background.png");
+    background-image: url("./../img/hero/hero-desktop-background.png"), linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 50%, $hero-background-left 50%, $hero-background-right 100%);
+    background-position-x: 100%, 100%;
     background-repeat: no-repeat;
-    background-size: 50% 100%, cover;
+    background-size: contain, 100% 694px;
   }
 }
+
+// .page__body-hero-wrapper {
+//   @media (min-width: $desktop-above) {
+//     min-height: 694px;
+//     background-image: linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 100%), url("./../img/hero/hero-desktop-background.png");
+//     background-repeat: no-repeat;
+//     background-size: 50% 100%, cover;
+//   }
+// }

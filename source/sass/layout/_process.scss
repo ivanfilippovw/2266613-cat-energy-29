@@ -106,7 +106,7 @@
   }
 
   &::after {
-    @media (min-width) {
+    @media (min-width: $mobile-above) {
       content: "1";
       position: absolute;
       z-index: -1;
@@ -140,7 +140,7 @@
   }
 
   &::after {
-    @media (min-width) {
+    @media (min-width: $mobile-above) {
       content: "2";
       position: absolute;
       z-index: -1;
@@ -172,7 +172,7 @@
   }
 
   &::after {
-    @media (min-width) {
+    @media (min-width: $mobile-above) {
       content: "3";
       position: absolute;
       z-index: -1;
@@ -200,7 +200,7 @@
   }
 
   &::after {
-    @media (min-width) {
+    @media (min-width: $mobile-above) {
       content: "4";
       position: absolute;
       z-index: -1;

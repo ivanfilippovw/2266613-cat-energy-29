@@ -3,6 +3,7 @@
   padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
+  overflow: hidden;
 
   @media (min-width: $mobile-s-above) {
     width: 600px;
@@ -30,17 +31,25 @@
 
 .additional__title {
   position: relative;
+  left: -20px;
+  width: 266px;
   margin-top: 0;
   margin-bottom: 1px;
+  padding-right: 20px;
   padding-bottom: 36px;
+  padding-left: 20px;
   font-family: $font-second;
   font-size: 24px;
   line-height: 1;
   color: $base-text-dark-color;
-  border-bottom: 1px solid $third-border-color;
+  // border-bottom: 1px solid $third-border-color;
+  background-color: $base-background-light-color;
 
   @media (min-width: $mobile-above) {
+    left: 0;
+    width: 420px;
     margin-bottom: 80px;
+    padding-right: 40px;
     padding-bottom: 0;
     padding-left: 40px;
     font-size: 36px;
@@ -54,40 +63,43 @@
 }
 
 .additional__title::before {
-  @media (min-width: $mobile-above) {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: -6%;
-    width: 6%;
-    height: 2px;
-    background-color: $branded-color;
-  }
-}
-
-.additional__title::after {
   content: "";
   position: absolute;
-  top: 15px;
-  right: -20px;
-  width: 54px;
+  z-index: -1;
+  top: 30%;
+  left: -50%;
+  width: 150vw;
   height: 2px;
   background-color: $branded-color;
 
-  @media (min-width: $mobile-s-above) {
-    right: -40px;
-  }
-
   @media (min-width: $mobile-above) {
-    top: 30%;
-    right: -4%;
-    width: 45%;
-  }
-
-  @media (min-width: $tablet-above) {
-    right: -2%;
+    top: 60%;
   }
 }
+
+// .additional__title::after {
+//   content: "";
+//   position: absolute;
+//   top: 15px;
+//   right: -20px;
+//   width: 54px;
+//   height: 2px;
+//   background-color: $branded-color;
+
+//   @media (min-width: $mobile-s-above) {
+//     right: -40px;
+//   }
+
+//   @media (min-width: $mobile-above) {
+//     top: 30%;
+//     right: -4%;
+//     width: 45%;
+//   }
+
+//   @media (min-width: $tablet-above) {
+//     right: -2%;
+//   }
+// }
 
 .additional__card-list {
   @include base-list-style;
