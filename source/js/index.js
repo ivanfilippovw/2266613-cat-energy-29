@@ -1,3 +1,5 @@
+document.querySelector('body').classList.remove('page__body--nojs');
+
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("hamburger__button").addEventListener("click", function() {
     document.querySelector("body").classList.toggle("open")
