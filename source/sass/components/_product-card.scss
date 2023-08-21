@@ -156,6 +156,8 @@
 }
 
 .product-card__button.button--order {
-  width: 169px;
-  height: 40px;
+  @media (min-width: $desktop-above) {
+    width: 169px;
+    height: 40px;
+  }
 }

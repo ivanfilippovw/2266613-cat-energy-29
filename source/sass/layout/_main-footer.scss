@@ -41,6 +41,8 @@
   margin-left: auto;
 
   @media (min-width: $mobile-xs-above) {
+    width: 180px;
+    justify-content: space-between;
     margin-left: initial;
   }
 }
