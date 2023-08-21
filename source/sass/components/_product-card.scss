@@ -99,6 +99,10 @@
   }
 }
 
+.product-card__title-link {
+  color: $catalog-product-card-title-color;
+}
+
 .product-card__info {
   margin-top: 0;
   margin-bottom: 0;
@@ -152,6 +156,8 @@
 }
 
 .product-card__button.button--order {
-  width: 169px;
-  height: 40px;
+  @media (min-width: $desktop-above) {
+    width: 169px;
+    height: 40px;
+  }
 }
