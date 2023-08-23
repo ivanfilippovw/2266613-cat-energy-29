@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon-32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.svg"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -26,13 +28,13 @@
       <nav class="main-header__navigation navigation">
         <ul class="navigation__list" id="menu">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--viewport_desktop navigation__link--active" href="#">Главная</a>
+            <a class="navigation__link navigation__link--desktop_index navigation__link--active" href="#">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--viewport_desktop " href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link navigation__link--desktop_index" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--viewport_desktop" href="form.html">Подбор программы</a>
+            <a class="navigation__link navigation__link--desktop_index" href="form.html">Подбор программы</a>
           </li>
         </ul>
         <button class="main-header__hamburger hamburger" id="hamburger__button">
@@ -46,8 +48,14 @@
       <div class="container">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="./img/hero/hero-image.png" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм."
-          width="280" height="270">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="./img/hero/hero-desktop@1x.png 1x, ./img/hero/hero-desktop@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.png 1x, ./img/hero/hero-tablet@2x.png 2x"
+            width="709" height="609">
+          <img class="hero__image" src="./img/hero/hero-mobile@1x.png" srcset="./img/hero/hero-mobile@2x.png 2x"
+            width="280" height="270" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм.">
+        </picture>
         <a class="hero__button button button--hero" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -108,16 +116,28 @@
         </div>
         <div class="example__slider-container slider" data-slifer-container>
           <div class="slider__before-wrapper" data-cat-thin>
-            <img class="slider__before-image-mobile" src="img/example/example-before@1x.png" alt="">
-            <img class="slider__before-image-tablet" src="img/example/example-before-tablet@1x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/example/example-tablet-before@1x.png 1x, ./img/example/example-tablet-before@2x.png 2x"
+                width="560" height="512">
+              <img class="slider__before-image" src="./img/example/example-mobile-before@1x.png"
+                srcset="./img/example/example-mobile-before@2x.png 2x" width="280" height="256"
+                alt="Как выглядел кот до функционального питания.">
+            </picture>
           </div>
           <div class="slider__button-wrapper">
             <button class="slider__button" type="button" data-slider-button></button>
             <span class="slider__button-line"></span>
           </div>
           <div class="slider__after-wrapper" data-cat-fat>
-            <img class="slider__after-image-mobile" src="img/example/example-after@1x.png" alt="">
-            <img class="slider__after-image-tablet" src="img/example/example-after-tablet@1x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/example/example-tablet-after@1x.png 1x, ./img/example/example-tablet-after@2x.png 2x"
+                width="560" height="512">
+              <img class="slider__after-image" src="./img/example/example-mobile-after@1x.png"
+                srcset="./img/example/example-mobile-after@2x.png 2x" width="280" height="256"
+                alt="Как выглядит кот после функционального питания.">
+            </picture>
           </div>
         </div>
       </div>
@@ -129,13 +149,28 @@
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map-wrapper">
-        <img class="contacts__map-image" src="./img/contacts/contacts-map.png"
-          alt="Карта Google с отметкой, где находится офис Cat energy." width="320" height="362">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="./img/contacts/contacts-desktop-map@1x.png 1x, ./img/contacts/contacts-desktop-map@2x.png 2x"
+            width="1440" height="400">
+          <source media="(min-width: 768px)"
+            srcset="./img/contacts/contacts-tablet-map@1x.png 1x, ./img/contacts/contacts-tablet-map@2x.png 2x"
+            width="768" height="400">
+          <img class="contacts__map-image" src="./img/contacts/contacts-mobile-map@1x.png"
+            srcset="./img/contacts/contacts-mobile-map@2x.png 2x" width="320" height="362"
+            alt="Карта Google с отметкой, где находится офис Cat energy.">
+        </picture>
         <a class="contacts__map-link"
           href="https://www.google.com/maps?ll=59.938717,30.323047&z=16&t=m&hl=ru&gl=GE&mapclient=embed&q=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19/8+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+191186"
           target="_blank">
-          <img src="./img/contacts/contacts-map-pin.png"
-            alt="Фирменная отметка Cat energy на карте Google - увеличить карту." width="57" height="53">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="./img/contacts/contacts-tablet-map-pin@1x.png, ./img/contacts/contacts-tablet-map-pin@2x.png 2x"
+              width="113" height="106">
+            <img class="contacts__map-link-pin" src="./img/contacts/contacts-mobile-map-pin@1x.png"
+              srcset="./img/contacts/contacts-mobile-map-pin@2x.png 2x" width="57" height="53"
+              alt="Фирменная отметка Cat energy на карте Google - увеличить карту.">
+          </picture>
         </a>
       </div>
       <!-- <iframe class="contacts__map"
@@ -176,7 +211,7 @@
     </ul>
     <a class="main-footer__academy-link academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
       <span class="academy-link__text">HTML Academy</span>
-      <svg class="academy-link__icon"  width="27" height="34" aria-hidden="true" focusable="false">
+      <svg class="academy-link__icon" width="27" height="34" aria-hidden="true" focusable="false">
         <use xlink:href="./img/svg/sprite.svg#htmlacademy-icon"></use>
       </svg>
     </a>
