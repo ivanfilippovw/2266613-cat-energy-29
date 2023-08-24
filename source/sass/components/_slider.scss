@@ -50,25 +50,15 @@
   overflow: hidden;
 }
 
-.slider__before-image-mobile,
-.slider__after-image-mobile {
+.slider__before-image,
+.slider__after-image {
   display: inline;
   width: 280px;
   height: 256px;
 
   @media (min-width: $mobile-above) {
-    display: none;
-  }
-}
-
-.slider__before-image-tablet,
-.slider__after-image-tablet {
-  display: none;
-  width: 560px;
-  height: 512px;
-
-  @media (min-width: $mobile-above) {
-    display: inline;
+    width: 560px;
+    height: 512px;
   }
 }
 

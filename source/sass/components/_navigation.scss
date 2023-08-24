@@ -91,10 +91,6 @@ body.open .navigation__list {
       padding-bottom: 10px;
       border-bottom: 2px solid $branded-color;
     }
-
-    @media (min-width: $desktop-above) {
-      border-bottom-color: $base-light-color;
-    }
   }
 
   @media (min-width: $desktop-above) {
@@ -102,8 +98,9 @@ body.open .navigation__list {
   }
 }
 
-.navigation__link--viewport_desktop {
+.navigation__link--desktop_index {
   @media (min-width: $desktop-above) {
     color: $base-light-color;
+    border-bottom-color: $base-light-color;
   }
 }

@@ -40,11 +40,30 @@
 }
 
 .button--hero {
+  font-size: 16px;
+  line-height: 1.25;
+
   @media (min-width: $mobile-above) {
     width: 244px;
     height: 54px;
     padding: 14px 26px;
     font-size: 20px;
     // line-height: 1;
+  }
+}
+
+.button--application {
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media (min-width: $mobile-above) {
+    font-size: 20px;
+    line-height: 1.3;
+    width: 284px;
+    height: 54px;
+  }
+
+  @media (min-width: $desktop-above) {
+    width: 570px;
   }
 }

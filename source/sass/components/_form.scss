@@ -139,7 +139,7 @@
   border-radius: 50%;
   appearance: none;
 
-  @media (min-width: $desktop-above) {
+  @media (min-width: $mobile-above) {
     width: 40px;
     height: 40px;
     padding: 9.5px;
@@ -574,22 +574,31 @@
 }
 
 .form__additional-list > .form__additional-wrapper:nth-child(1) {
-  margin-right: 104px;
+  @media (min-width: $desktop-above) {
+    margin-right: 104px;
+  }
 }
 
 .form__additional-list > .form__additional-wrapper:nth-child(2) {
-  margin-right: 136px;
+  @media (min-width: $desktop-above) {
+    margin-right: 136px;
+  }
 }
 
 .form__additional-list > .form__additional-wrapper:nth-child(3) {
-  margin-right: 197px;
+  @media (min-width: $desktop-above) {
+    margin-right: 197px;
+  }
 }
 
 .form__additional-list > .form__additional-wrapper:nth-child(4) {
-  margin-right: 0;
+  @media (min-width: $desktop-above) {
+    margin-right: 0;
+  }
 }
 
 .form__checkbox-input {
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   margin-top: 0;
@@ -598,6 +607,11 @@
   margin-left: 0;
   border: 1px solid $third-border-color;
   appearance: none;
+
+  @media (min-width: $mobile-above) {
+    width: 40px;
+    height: 40px;
+  }
 
   &:checked {
     background-image: url("./../img/sprite.svg#form-tick-icon");
