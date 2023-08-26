@@ -47,12 +47,31 @@
   &--icon_slim::after {
     content: "";
     position: absolute;
+    top: 25px;
+    left: 25px;
     display: block;
     width: 36px;
     height: 50px;
-    background-image: url("./../img/svg/sprite.svg#program-slim-icon");
+    background-image: url("./../img/svg/stack/program-slim-icon.svg");
     background-repeat: no-repeat;
-    background-size: 36px 50px;
+    // background-size: 36px 50px;
+
+    @media (min-width: $mobile-above) {
+      top: 92px;
+      right: 90px;
+      left: initial;
+      width: 140px;
+      height: 194px;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-above) {
+      top: 47px;
+      right: initial;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &--icon_pro::before {
@@ -82,12 +101,32 @@
   &--icon_pro::after {
     content: "";
     position: absolute;
+    top: 40px;
+    left: 10px;
     display: block;
     width: 67px;
     height: 28px;
-    background-image: url("./../img/svg/sprite.svg#program-pro-icon");
+    background-image: url("./../img/svg/stack/program-pro-icon.svg");
     background-repeat: no-repeat;
-    background-size: 67px 28px;
+    // background-size: 67px 28px;
+
+    @media (min-width: $mobile-above) {
+      top: 120px;
+      right: 40px;
+      left: initial;
+      width: 268px;
+      height: 112px;
+      background-image: url("./../img/svg/stack/program-pro-icon-tablet.svg");
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-above) {
+      top: 47px;
+      right: initial;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 

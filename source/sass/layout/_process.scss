@@ -96,9 +96,9 @@
   }
 
   &::before {
-    @media (min-width: $mobile-above) {
-      background-image: url("../img/svg/sprite.svg#process-leaf-icon");
-    }
+    background-image: url("../img/svg/stack/process-leaf-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   @media (min-width: $tablet-above) {
@@ -134,9 +134,9 @@
   }
 
   &::before {
-    @media (min-width: $mobile-above) {
-      background-image: url("../img/svg/sprite.svg#process-leaf-icon");
-    }
+    background-image: url("../img/svg/stack/process-powder-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   &::after {
@@ -166,9 +166,9 @@
   }
 
   &::before {
-    @media (min-width: $mobile-above) {
-      background-image: url("../img/svg/sprite.svg#process-leaf-icon");
-    }
+    background-image: url("../img/svg/stack/process-eat-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   &::after {
@@ -194,9 +194,9 @@
   }
 
   &::before {
-    @media (min-width: $mobile-above) {
-      background-image: url("../img/svg/sprite.svg#process-leaf-icon");
-    }
+    background-image: url("../img/svg/stack/process-watch-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   &::after {
