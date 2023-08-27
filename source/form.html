@@ -17,9 +17,14 @@
   <header class="main-header container">
     <a class="main-header__logo logo" href="index.html">
       <span class="visually-hidden">Перейти на главную страницу</span>
-      <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/svg/sprite/logo-icon-desktop.svg" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="./img/svg/sprite/logo-icon-tablet.svg" width="60" height="50">
+        <img class="logo__image" src="./img/svg/sprite/logo-icon-mobile.svg" width="33" height="38" alt="">
+      </picture>
+      <!-- <svg class="logo__image" width="33" height="38" aria-hidden="true" focusable="false">
         <use xlink:href="./img/svg/sprite/sprite.svg#logo-icon-mobile"></use>
-      </svg>
+      </svg> -->
       <svg class="logo__text" width="101" height="18" aria-hidden="true" focusable="false">
         <use xlink:href="./img/svg/sprite/sprite.svg#logo-text"></use>
       </svg>
@@ -86,7 +91,7 @@
           </div>
           <div class="form__contacts-wrapper">
             <label class="form__label" for="phone">Телефон:*</label>
-            <input class="form__input form__input--phone" type="number" name="phone" id="phone"
+            <input class="form__input form__input--phone" type="tel" name="phone" id="phone"
               placeholder="8 (960) 900-60-90" required>
           </div>
         </div>

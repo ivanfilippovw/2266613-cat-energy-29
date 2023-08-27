@@ -138,3 +138,20 @@
     height: 100%;
   }
 }
+
+.contacts__interactive-map {
+  display: block;
+  width: 100%;
+}
+
+.contacts__map-wrapper picture {
+  display: none;
+}
+
+.contacts__map-wrapper--nojs picture {
+  display: block;
+}
+
+.contacts__map-wrapper--nojs iframe {
+  display: none;
+}

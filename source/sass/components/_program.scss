@@ -193,12 +193,12 @@
     display: block;
     width: 32px;
     height: 10px;
-    background-image: url("./../img/svg/sprite.svg#program-short-arrow-icon");
+    background-image: url("./../img/svg/stack/program-short-arrow-icon.svg");
     background-repeat: no-repeat;
     background-size: 32px 10px;
+  }
 
-    @media (min-width: $mobile-above) {
-      background-image: url("./../img/svg/sprite.svg#program-long-arrow-icon");
-    }
+  &:hover::after {
+    background-image: url("./../img/svg/stack/program-long-arrow-icon.svg");
   }
 }
