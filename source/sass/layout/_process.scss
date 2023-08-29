@@ -88,21 +88,21 @@
   }
 }
 
-.process__item:nth-child(1) {
+.process__item:nth-child(1n) {
   @media (min-width: $mobile-above) {
     padding-top: 151px;
     padding-bottom: 57px;
     width: 230px;
   }
 
+  @media (min-width: $tablet-above) {
+    margin-right: 90px;// 95px по макету
+  }
+
   &::before {
     background-image: url("../img/svg/stack/process-leaf-icon.svg");
     background-repeat: no-repeat;
     background-position: 50%;
-  }
-
-  @media (min-width: $tablet-above) {
-    margin-right: 90px;// 95px по макету
   }
 
   &::after {
@@ -117,6 +117,12 @@
       line-height: 1;
       color: $second-background-color;
     }
+  }
+}
+
+.process__item:nth-child(1) {
+  @media (min-width: $desktop-above) {
+    margin-right: 0;// 95px по макету
   }
 }
 
@@ -154,6 +160,12 @@
   }
 }
 
+.process__item:nth-child(2n) {
+  @media (min-width: $desktop-above) {
+    margin-right: 0;// 95px по макету
+  }
+}
+
 .process__item:nth-child(3) {
   @media (min-width: $mobile-above) {
     padding-top: 151px;
@@ -186,6 +198,12 @@
   }
 }
 
+.process__item:nth-child(3n) {
+  @media (min-width: $desktop-above) {
+    margin-right: 0;// 95px по макету
+  }
+}
+
 .process__item:nth-child(4) {
   @media (min-width: $mobile-above) {
     padding-top: 151px;
@@ -211,6 +229,12 @@
       line-height: 1;
       color: $second-background-color;
     }
+  }
+}
+
+.process__item:nth-child(4n) {
+  @media (min-width: $desktop-above) {
+    margin-right: 0;// 95px по макету
   }
 }
 

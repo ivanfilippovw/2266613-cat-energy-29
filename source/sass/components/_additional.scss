@@ -194,6 +194,7 @@
 
 .additional__card-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
 
@@ -250,13 +251,14 @@
   padding-top: 187px;
   padding-right: 61px;
   padding-left: 58px;
+  background-color: $branded-color;
   background-image: url("./../img/catalog/catalog-gift-bg-mobile@1x.png");
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("./../img/catalog/catalog-gift-bg-mobile@2x.png");
-    background-size: contain;
+    background-size: cover;
   }
 
   @media (min-width: $mobile-above) {
@@ -276,7 +278,6 @@
   @media (min-width: $desktop-above) {
     display: inline-block;
     width: 245px;
-    height: 288px;
     min-width: 245px;
     min-height: 288px;
     padding-top: 187px;
@@ -352,6 +353,6 @@
 
   @media (min-width: $desktop-above) {
     width: 244px;
-    height: 40px;
+    min-height: 40px;
   }
 }

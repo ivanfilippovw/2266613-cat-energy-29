@@ -8,7 +8,7 @@
 
   @media (min-width: $mobile-above) {
     padding-top: 77px;
-    padding-right: 63px;
+    padding-right: 310px;
     padding-bottom: 53px;
     padding-left: 52px;
   }
@@ -149,8 +149,9 @@
   }
 
   @media (min-width: $desktop-above) {
+    margin-left: 110px;
     margin-bottom: 73px;
-    text-align: center;
+    text-align: left;
   }
 }
 

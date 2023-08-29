@@ -59,6 +59,7 @@
   text-transform: uppercase;
 
   @media (min-width: $mobile-above) {
+    width: 416px;
     margin-bottom: 21px;
     margin-left: 90px;
     font-size: 20px;
@@ -100,9 +101,11 @@
   }
 
   @media (min-width: $desktop-above) {
-    position: absolute;
-    top: 115%;
-    left: 13.8%;
+    position: static;
+    // top: 115%;
+    // left: 13.8%;
+    margin-right: 0;
+    margin-left: 90px;
   }
 }
 

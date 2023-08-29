@@ -127,8 +127,24 @@
 
 .more__button-link {
   display: block;
-  padding: 8px 40px;
+  width: 280px;
+  min-height: 40px;
+  padding: 10px 38px;
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
   color: $second-text-dark-color;
+  background-color: $second-background-color;
+
+  @media (min-width: $mobile-above) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-above) {
+    width: 169px;
+  }
 }
 
 .more__button-link--nojs {

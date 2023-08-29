@@ -25,10 +25,8 @@
 
   @media (min-width: $mobile-above) {
     position: static;
-  }
-
-  @media (min-width: $mobile-above) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 33px;
     width: 100%;
@@ -61,6 +59,7 @@ body.open .navigation__list {
   }
 
   @media (min-width: $mobile-above) {
+    width: initial;
     padding-top: 0;
     padding-bottom: 0;
     border: none;

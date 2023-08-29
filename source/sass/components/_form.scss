@@ -129,6 +129,7 @@
 }
 
 .form__program-wrapper > .form__radio-input {
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   margin-top: 0;
@@ -580,25 +581,25 @@
   }
 }
 
-.form__additional-list > .form__additional-wrapper:nth-child(1) {
+.form__additional-list > .form__additional-wrapper:nth-child(1n) {
   @media (min-width: $desktop-above) {
     margin-right: 104px;
   }
 }
 
-.form__additional-list > .form__additional-wrapper:nth-child(2) {
+.form__additional-list > .form__additional-wrapper:nth-child(2n) {
   @media (min-width: $desktop-above) {
     margin-right: 136px;
   }
 }
 
-.form__additional-list > .form__additional-wrapper:nth-child(3) {
+.form__additional-list > .form__additional-wrapper:nth-child(3n) {
   @media (min-width: $desktop-above) {
     margin-right: 197px;
   }
 }
 
-.form__additional-list > .form__additional-wrapper:nth-child(4) {
+.form__additional-list > .form__additional-wrapper:nth-child(4n) {
   @media (min-width: $desktop-above) {
     margin-right: 0;
   }
