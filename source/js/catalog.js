@@ -2,6 +2,9 @@ document.querySelector('body').classList.remove('page__body--nojs');
 
 document.querySelector('.contacts__map-wrapper').classList.remove('contacts__map-wrapper--nojs');
 
+document.querySelector('.more__button-link').classList.remove('more__button-link--nojs');
+// логика, что если нет класса .more__button-link--nojs , то нужно удалить href у ссылки
+
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("hamburger__button").addEventListener("click", function() {
     document.querySelector("body").classList.toggle("open")

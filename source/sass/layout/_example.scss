@@ -11,15 +11,15 @@
     padding-right: 30px;
     padding-bottom: 101px;
     padding-left: 30px;
-    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 55%, $example-background-color 55%, $example-background-color 100%);
+    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 57.3%, $example-background-color 57.3%, $example-background-color 100%);
   }
 
   @media (min-width: $desktop-above) {
     padding-top: 0;
     padding-right: 110px;
-    padding-bottom: 75px;
+    padding-bottom: 68px;
     padding-left: 110px;
-    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 22%, $example-background-color 22%, $example-background-color 100%);
+    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 23%, $example-background-color 23%, $example-background-color 100%);
   }
 }
 
@@ -77,6 +77,7 @@
   }
 
   @media (min-width: $desktop-above) {
+    width: 433px;
     margin-bottom: 69px;
   }
 }
@@ -84,7 +85,7 @@
 .example__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 3px;
 
   @media (min-width: $mobile-xs-above) {
     justify-content: space-around;
@@ -96,34 +97,39 @@
   }
 
   @media (min-width: $desktop-above) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
 
 .example__weight {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 15px;
   width: 124px;
-  height: 56px;
+  min-height: 56px;
   margin-top: 0;
   margin-bottom: 0;
-  border: 1px solid $third-border-color;
+  // border: 1px solid $third-border-color;
   border-radius: 2px;
 
   @media (min-width: $mobile-above) {
     width: 162px;
-    height: 77px;
+    min-height: 77px;
   }
 }
 
 .example__weight dt {
+  width: 100%;
+  padding: 14px 20px 17px;
   text-align: center;
   font-family: $font-second;
   font-size: 24px;
   line-height: 1;
   color: $base-text-dark-color;
+  border: 1px solid $third-border-color;
 
   @media (min-width: $mobile-above) {
     font-size: 30px;
@@ -132,11 +138,12 @@
 }
 
 .example__weight dd {
-  position: absolute;
+  // position: absolute;
   z-index: 1;
   top: 80%;
   width: 87px;
-  height: 24px;
+  min-height: 24px;
+  margin-top: -22px;
   margin-left: 0;
   padding-inline: 5px;
   font-size: 12px;
@@ -147,6 +154,7 @@
   @media (min-width: $mobile-above) {
     top: 88%;
     width: 106px;
+    margin-top: -24px;
     font-size: 14px;
     color: $second-text-dark-color;
     background-color: $base-background-light-color;
@@ -160,27 +168,32 @@
 .example__time {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 15px;
   width: 124px;
-  height: 56px;
+  min-height: 56px;
   margin-top: 0;
   margin-bottom: 0;
-  border: 1px solid $third-border-color;
+  // border: 1px solid $third-border-color;
   border-radius: 2px;
 
   @media (min-width: $mobile-above) {
     width: 162px;
-    height: 77px;
+    min-height: 77px;
   }
 }
 
 .example__time dt {
+  width: 100%;
+  padding: 14px 20px 17px;
   text-align: center;
   font-family: $font-second;
   font-size: 24px;
   line-height: 1;
   color: $base-text-dark-color;
+  border: 1px solid $third-border-color;
 
   @media (min-width: $mobile-above) {
     font-size: 30px;
@@ -189,11 +202,12 @@
 }
 
 .example__time dd {
-  position: absolute;
+  // position: absolute;
   z-index: 1;
   top: 80%;
   width: 87px;
-  height: 24px;
+  min-height: 24px;
+  margin-top: -22px;
   margin-left: 0;
   padding-inline: 5px;
   font-size: 12px;
@@ -204,6 +218,7 @@
   @media (min-width: $mobile-above) {
     top: 88%;
     width: 135px;
+    margin-top: -24px;
     font-size: 14px;
     color: $second-text-dark-color;
     background-color: $base-background-light-color;
@@ -217,21 +232,28 @@
 .example__cost-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 6px;
 
   @media (min-width: $mobile-above) {
-    position: absolute;
-    top: 28%;
-    right: 30px;
+    position: relative;
+    // top: 28%;
+    // right: 30px;
+    vertical-align: middle;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
+    row-gap: 9px;
+    margin-top: -8px;
+    margin-left: 165px;
   }
 
   @media (min-width: $desktop-above) {
     position: static;
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 10px;
     width: 327px;
+    margin-left: 0;
   }
 }
 
@@ -257,7 +279,12 @@
   margin-left: auto;
 
   @media (min-width: $mobile-above) {
-    margin-top: 104px;
+    margin-top: 88px;
+  }
+
+  @media (min-width: $desktop-above) {
+    margin-top: 0;
+    margin-right: 0;
   }
 
   // @media (min-width: $desktop-above) {

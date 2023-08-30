@@ -17,8 +17,15 @@
   }
 }
 
+.main-footer__logo-text {
+  @media (min-width: $mobile-above) {
+    margin-right: 52px;
+  }
+}
+
 .main-footer__social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 280px;
   margin-top: 20px;
@@ -44,5 +51,10 @@
     width: 180px;
     justify-content: space-between;
     margin-left: initial;
+  }
+
+  @media (min-width: $mobile-above) {
+    justify-content: flex-end;
+    column-gap: 22px;
   }
 }

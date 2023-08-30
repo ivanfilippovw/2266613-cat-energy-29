@@ -1,7 +1,7 @@
 .additional {
   padding-top: 25px;
   padding-right: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
   padding-left: 20px;
   overflow: hidden;
 
@@ -11,7 +11,7 @@
 
   @media (min-width: $mobile-above) {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 67px;
     padding-right: 30px;
     padding-bottom: 75px;
     padding-left: 30px;
@@ -59,6 +59,7 @@
   }
 
   @media (min-width: $desktop-above) {
+    left: -40px;
     grid-area: title;
   }
 }
@@ -67,7 +68,7 @@
   content: "";
   position: absolute;
   z-index: -1;
-  top: 30%;
+  top: 25%;
   left: -50%;
   width: 150vw;
   height: 2px;
@@ -75,6 +76,10 @@
 
   @media (min-width: $mobile-above) {
     top: 60%;
+  }
+
+  @media (min-width: $desktop-above) {
+    top: 64%;
   }
 }
 
@@ -114,7 +119,7 @@
   @media (min-width: $desktop-above) {
     display: inline-block;
     width: 896px;
-    margin-right: 74px;
+    margin-right: 80px;
     margin-bottom: 0;
     border: none;
   }
@@ -141,7 +146,7 @@
   @media (min-width: $desktop-above) {
     display: flex;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-right: 0;
     padding-bottom: 17px;
     padding-left: 0;
@@ -194,8 +199,9 @@
 
 .additional__card-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $mobile-xs-above) {
     justify-content: space-around;
@@ -203,10 +209,12 @@
 
   @media (min-width: $mobile-above) {
     grid-area: meta;
-    width: 223px;
-    justify-content: flex-end;
     justify-self: end;
-    column-gap: 49px;
+    column-gap: 55px;
+    // width: 223px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    line-height: 1.25;
   }
 
   @media (min-width: $desktop-above) {
@@ -224,7 +232,7 @@
   line-height: 1;
   color: $second-text-dark-color;
 
-  @media (min-width: $desktop-above) {
+  @media (min-width: $mobile-above) {
     font-size: 16px;
     line-height: 1.25;
   }
@@ -236,7 +244,7 @@
   line-height: 1;
   color: $second-text-dark-color;
 
-  @media (min-width: $desktop-above) {
+  @media (min-width: $mobile-above) {
     font-size: 16px;
     line-height: 1.25;
   }
@@ -250,13 +258,14 @@
   padding-top: 187px;
   padding-right: 61px;
   padding-left: 58px;
+  background-color: $branded-color;
   background-image: url("./../img/catalog/catalog-gift-bg-mobile@1x.png");
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("./../img/catalog/catalog-gift-bg-mobile@2x.png");
-    background-size: contain;
+    background-size: cover;
   }
 
   @media (min-width: $mobile-above) {
@@ -274,9 +283,9 @@
   }
 
   @media (min-width: $desktop-above) {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 245px;
-    height: 288px;
     min-width: 245px;
     min-height: 288px;
     padding-top: 187px;
@@ -295,13 +304,23 @@
   &::before {
     content: "";
     position: absolute;
-    top: 35%;
+    top: 33%;
     left: 50%;
     display: block;
     width: 78px;
     height: 80px;
-    background-image: url("./../img/svg/sprite.svg#catalog-gift-icon");
+    background-image: url("./../img/svg/stack/catalog-gift-icon.svg");
     transform: translate(-50%, -50%);
+
+    @media (min-width: $mobile-above) {
+      top: 48%;
+      left: 16.5%;
+    }
+
+    @media (min-width: $desktop-above) {
+      top: 33%;
+      left: 50%;
+    }
   }
 }
 
@@ -324,8 +343,9 @@
   }
 
   @media (min-width: $desktop-above) {
+    min-width: 161px;
     margin-right: auto;
-    margin-bottom: 43px;
+    margin-bottom: 0;
     margin-left: auto;
     text-align: center;
   }
@@ -342,6 +362,6 @@
 
   @media (min-width: $desktop-above) {
     width: 244px;
-    height: 40px;
+    min-height: 40px;
   }
 }

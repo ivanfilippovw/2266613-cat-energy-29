@@ -2,14 +2,14 @@
   position: relative;
   padding-top: 30px;
   padding-right: 33px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   padding-left: 20px;
   background-color: $second-background-color;
 
   @media (min-width: $mobile-above) {
     padding-top: 77px;
-    padding-right: 63px;
-    padding-bottom: 53px;
+    padding-right: 310px;
+    padding-bottom: 62px;
     padding-left: 52px;
   }
 
@@ -17,12 +17,13 @@
     display: inline-block;
     width: 570px;
     padding-right: 61px;
-    padding-bottom: 55px;
+    padding-bottom: 64px;
   }
 
   &--icon_slim::before {
     content: "";
     position: absolute;
+    top: 9.5%;
     display: block;
     width: 50px;
     height: 50px;
@@ -47,17 +48,37 @@
   &--icon_slim::after {
     content: "";
     position: absolute;
+    top: 21px;
+    left: 27px;
     display: block;
     width: 36px;
     height: 50px;
-    background-image: url("./../img/svg/sprite.svg#program-slim-icon");
+    background-image: url("./../img/svg/stack/program-slim-icon.svg");
     background-repeat: no-repeat;
-    background-size: 36px 50px;
+    // background-size: 36px 50px;
+
+    @media (min-width: $mobile-above) {
+      top: 82px;
+      right: 92px;
+      left: initial;
+      width: 140px;
+      height: 194px;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-above) {
+      top: 38px;
+      right: initial;
+      left: 66px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &--icon_pro::before {
     content: "";
     position: absolute;
+    top: 9%;
     display: block;
     width: 50px;
     height: 50px;
@@ -82,12 +103,32 @@
   &--icon_pro::after {
     content: "";
     position: absolute;
+    top: 35px;
+    left: 13px;
     display: block;
     width: 67px;
     height: 28px;
-    background-image: url("./../img/svg/sprite.svg#program-pro-icon");
+    background-image: url("./../img/svg/stack/program-pro-icon.svg");
     background-repeat: no-repeat;
-    background-size: 67px 28px;
+    // background-size: 67px 28px;
+
+    @media (min-width: $mobile-above) {
+      top: 135px;
+      right: 29px;
+      left: initial;
+      width: 268px;
+      height: 112px;
+      background-image: url("./../img/svg/stack/program-pro-icon-tablet.svg");
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-above) {
+      top: 67px;
+      right: initial;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
@@ -110,32 +151,35 @@
   }
 
   @media (min-width: $desktop-above) {
+    margin-left: 162px;
     margin-bottom: 73px;
-    text-align: center;
+    text-align: left;
   }
 }
 
 .program p {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding-bottom: 23px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $mobile-above) {
     width: 340px;
-    margin-bottom: 48px;
+    margin-bottom: 58px;
     padding-bottom: 0;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-above) {
     width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 32px;
   }
 }
 
 .program__link {
   display: flex;
+  align-items: center;
+  column-gap: 15px;
   font-family: $font-second;
   font-size: 16px;
   line-height: 1;
@@ -145,6 +189,7 @@
 
 
   @media (min-width: $mobile-above) {
+    column-gap: 25px;
     font-size: 20px;
     line-height: 1;
   }
@@ -153,13 +198,13 @@
     content: "";
     display: block;
     width: 32px;
-    height: 10px;
-    background-image: url("./../img/svg/sprite.svg#program-short-arrow-icon");
+    height: 11px;
+    background-image: url("./../img/svg/stack/program-short-arrow-icon.svg");
     background-repeat: no-repeat;
     background-size: 32px 10px;
+  }
 
-    @media (min-width: $mobile-above) {
-      background-image: url("./../img/svg/sprite.svg#program-long-arrow-icon");
-    }
+  &:hover::after {
+    background-image: url("./../img/svg/stack/program-long-arrow-icon.svg");
   }
 }
