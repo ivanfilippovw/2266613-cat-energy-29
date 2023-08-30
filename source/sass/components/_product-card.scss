@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 13px;
+  row-gap: 17px;
   padding-top: 19px;
   padding-right: 20px;
   padding-bottom: 25px;
@@ -16,7 +16,7 @@
     padding-right: 37px;
     padding-bottom: 40px;
     padding-left: 37px;
-    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 20%, $second-background-color 20%, $second-background-color 100%);
+    background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 16%, $second-background-color 16%, $second-background-color 100%);
   }
 
   @media (min-width: $desktop-above) {
@@ -112,7 +112,7 @@
   @media (min-width: $mobile-above) {
     display: flex;
     flex-direction: column;
-    row-gap: 5px; // по макету первый гэп 5, второй 7...... для pp на margin переделать видимо
+    row-gap: 7px; // по макету первый гэп 5, второй 7...... для pp на margin переделать видимо
     width: 250px;
   }
 
@@ -129,6 +129,10 @@
   @media (min-width: $mobile-above) {
     padding-bottom: 4px;
     border-bottom: 1px solid $third-border-color;
+  }
+
+  @media (min-width: $desktop-above) {
+    padding-bottom: 6.5px;
   }
 }
 

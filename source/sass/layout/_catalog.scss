@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 27px;
+  padding-top: 24px;
   border-top: 1px solid $border-color;
 
   @media (min-width: $mobile-above) {
@@ -63,6 +63,7 @@
   }
 
   @media (min-width: $desktop-above) {
+    justify-content: space-between;
     padding-right: 110px;
     padding-left: 110px;
   }

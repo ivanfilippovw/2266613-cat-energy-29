@@ -21,7 +21,7 @@
 
   @media (min-width: $mobile-above) {
     width: initial;
-    padding: 60px 70px;
+    padding: 61px 70px;
   }
 
   @media (min-width: $desktop-above) {
@@ -92,6 +92,10 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $mobile-above) {
+    height: 400px;
+  }
 }
 
 .contacts__map-image {
@@ -110,13 +114,15 @@
 .contacts__map-link {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 50%;
+  top: 46.5%;
+  left: 50.5%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 
   @media (min-width: $mobile-above) {
+    top: 50%;
+    left: 50.7%;
     width: 113px;
     height: 106px;
   }
@@ -142,6 +148,10 @@
 .contacts__interactive-map {
   display: block;
   width: 100%;
+
+  @media (min-width: $desktop-above) {
+    height: 400px;
+  }
 }
 
 .contacts__map-wrapper picture {

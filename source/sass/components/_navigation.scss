@@ -5,6 +5,10 @@
   @media (min-width: $mobile-above) {
     width: 463px;
   }
+
+  @media (min-width: $desktop-above) {
+    width: 478px;
+  }
 }
 
 .navigation__list {
@@ -14,7 +18,7 @@
   top: 0;
   right: 200%;
   width: 100%;
-  margin-top: 66px;
+  margin-top: 65px;
   background-color: $base-background-light-color;
   transition: transform 0.5s;
 
@@ -35,6 +39,7 @@
   }
 
   @media (min-width: $desktop-above) {
+    min-width: 478px;
     background-color: transparent;
   }
 }
@@ -87,12 +92,14 @@ body.open .navigation__list {
   &--active {
     @media (min-width: $mobile-above) {
       padding-top: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 6px;
       border-bottom: 2px solid $branded-color;
     }
   }
 
   @media (min-width: $desktop-above) {
+    font-size: 20px;
+    line-height: 1.5;
     color: $third-text-dark-color;
   }
 }
