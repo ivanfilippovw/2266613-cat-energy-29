@@ -36,7 +36,7 @@
 
   @media (min-width: $desktop-above) {
     display: inline-flex;
-    width: 560px;
+    width: 570px;
     margin-right: 80px;
     padding-bottom: 0;
     vertical-align: top;
@@ -184,8 +184,8 @@
     grid-template-areas: "title title" "email phone";
     row-gap: 76px;
     column-gap: 80px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 64px;
+    padding-bottom: 72px;
   }
 }
 
@@ -322,19 +322,25 @@
 }
 
 .form__contacts-wrapper > .form__input--email {
-  background-image: url("./../img/svg/stack/form-email-icon.svg");
+  background-image: url("./../img/svg/stack/stack.svg#form-email-icon");
   background-repeat: no-repeat;
   background-position: 94% 50%;
+  background-size: 17px 13px;
 
   @media (min-width: $mobile-above) {
     background-position: 97.5% 50%;
   }
+
+  @media (min-width: $desktop-above) {
+    width: 239px;
+  }
 }
 
 .form__contacts-wrapper > .form__input--phone {
-  background-image: url("./../img/svg/stack/form-phone-icon.svg");
+  background-image: url("./../img/svg/stack/stack.svg#form-phone-icon");
   background-repeat: no-repeat;
   background-position: 94% 50%;
+  background-size: 20px 20px;
 
   @media (min-width: $mobile-above) {
     background-position: 97.5% 50%;
@@ -368,7 +374,7 @@
   }
 
   @media (min-width: $desktop-above) {
-    padding-bottom: 70px;
+    padding-bottom: 66px;
   }
 }
 
@@ -399,7 +405,7 @@
   }
 
   @media (min-width: $desktop-above) {
-    margin-bottom: 78px;
+    margin-bottom: 72px;
   }
 }
 
@@ -649,7 +655,7 @@
 }
 
 .form__checkbox-input[type="checkbox"]:checked {
-  background-image: url("./../img/svg/stack/form-tick-icon.svg");
+  background-image: url("./../img/svg/stack/stack.svg#form-tick-icon");
   background-repeat: no-repeat;
   background-size: 26px 26px;
   background-position: center;
@@ -689,5 +695,6 @@
     display: inline-block;
     font-size: 16px;
     line-height: 1;
+    vertical-align: text-top;
   }
 }
