@@ -100,9 +100,10 @@
   }
 
   &::before {
-    background-image: url("../img/svg/stack/process-leaf-icon.svg");
+    background-image: url("../img/svg/stack/stack.svg#process-leaf-icon");
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 30px 32px;
   }
 
   &::after {
@@ -140,7 +141,7 @@
   }
 
   &::before {
-    background-image: url("../img/svg/stack/process-powder-icon.svg");
+    background-image: url("../img/svg/stack/stack.svg#process-powder-icon");
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -178,7 +179,7 @@
   }
 
   &::before {
-    background-image: url("../img/svg/stack/process-eat-icon.svg");
+    background-image: url("../img/svg/stack/stack.svg#process-eat-icon");
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -212,7 +213,7 @@
   }
 
   &::before {
-    background-image: url("../img/svg/stack/process-watch-icon.svg");
+    background-image: url("../img/svg/stack/stack.svg#process-watch-icon");
     background-repeat: no-repeat;
     background-position: 50%;
   }
