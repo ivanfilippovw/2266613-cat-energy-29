@@ -21,7 +21,8 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="./img/svg/others/logo-icon-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" srcset="./img/svg/others/logo-icon-tablet.svg" width="60" height="50">
-          <img class="logo__image" src="./img/svg/others/logo-icon-mobile.svg" width="33" height="38" alt="">
+          <img class="logo__image" src="./img/svg/others/logo-icon-mobile.svg" width="33" height="38" alt=""
+            loading="lazy">
         </picture>
         <svg class="logo__text" width="101" height="19" aria-hidden="true" focusable="false">
           <use xlink:href="./img/svg/stack/stack.svg#logo-text"></use>
@@ -62,7 +63,7 @@
           <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.png 1x, ./img/hero/hero-tablet@2x.png 2x"
             width="709" height="609">
           <img class="hero__image" src="./img/hero/hero-mobile@1x.png" srcset="./img/hero/hero-mobile@2x.png 2x"
-            width="280" height="270" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм.">
+            width="280" height="270" alt="Упаковка Cat Energy PRO со вкусом курицы 500 грамм." loading="lazy">
         </picture>
         <a class="hero__button button button--hero" href="form.html">Подобрать программу</a>
       </div>
@@ -131,7 +132,7 @@
                 width="560" height="512">
               <img class="slider__before-image" src="./img/example/example-mobile-before@1x.png"
                 srcset="./img/example/example-mobile-before@2x.png 2x" width="280" height="256"
-                alt="Как выглядел кот до функционального питания.">
+                alt="Как выглядел кот до функционального питания." loading="lazy">
             </picture>
           </div>
           <div class="slider__button-wrapper">
@@ -145,7 +146,7 @@
                 width="560" height="512">
               <img class="slider__after-image" src="./img/example/example-mobile-after@1x.png"
                 srcset="./img/example/example-mobile-after@2x.png 2x" width="280" height="256"
-                alt="Как выглядит кот после функционального питания.">
+                alt="Как выглядит кот после функционального питания." loading="lazy">
             </picture>
           </div>
         </div>
@@ -177,7 +178,7 @@
             width="768" height="400">
           <img class="contacts__map-image" src="./img/contacts/contacts-mobile-map@1x.png"
             srcset="./img/contacts/contacts-mobile-map@2x.png 2x" width="320" height="362"
-            alt="Карта Google с отметкой, где находится офис Cat energy.">
+            alt="Карта Google с отметкой, где находится офис Cat energy." loading="lazy">
         </picture>
         <a class="contacts__map-link"
           href="https://www.google.com/maps?ll=59.938717,30.323047&z=16&t=m&hl=ru&gl=GE&mapclient=embed&q=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19/8+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+191186"
@@ -188,7 +189,7 @@
               width="113" height="106">
             <img class="contacts__map-link-pin" src="./img/contacts/contacts-mobile-map-pin@1x.png"
               srcset="./img/contacts/contacts-mobile-map-pin@2x.png 2x" width="57" height="53"
-              alt="Фирменная отметка Cat energy на карте Google - увеличить карту.">
+              alt="Фирменная отметка Cat energy на карте Google - увеличить карту." loading="lazy">
           </picture>
         </a>
         <iframe class="contacts__interactive-map"
@@ -200,9 +201,11 @@
     </section>
   </main>
   <footer class="main-footer container">
-    <svg class="main-footer__logo-text logo-text" width="128" height="24" aria-hidden="true" focusable="false">
-      <use xlink:href="./img/svg/stack/stack.svg#logo-text"></use>
-    </svg>
+    <a class="main-footer__main-link" href="#">
+      <svg class="main-footer__logo-text logo-text" width="128" height="24" aria-hidden="true" focusable="false">
+        <use xlink:href="./img/svg/stack/stack.svg#logo-text"></use>
+      </svg>
+    </a>
     <ul class="main-footer__social social">
       <li class="social__item">
         <a class="social__link" href="#" target="_blank">

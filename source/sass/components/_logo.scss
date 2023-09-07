@@ -8,6 +8,19 @@
   @media (min-width: $desktop-above) {
     column-gap: 14px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__image {

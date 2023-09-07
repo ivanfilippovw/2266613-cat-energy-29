@@ -27,6 +27,15 @@
     min-height: 52px;
     font-size: 20px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $branded-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--more {
@@ -54,6 +63,15 @@
     padding: 14px 26px;
     font-size: 20px;
     // line-height: 1;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $branded-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 

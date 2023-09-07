@@ -21,6 +21,15 @@
   @media (min-width: $mobile-above) {
     margin-right: 52px;
   }
+
+  &:hover,
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 .main-footer__social {

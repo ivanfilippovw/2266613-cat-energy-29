@@ -102,6 +102,15 @@ body.open .navigation__list {
     line-height: 1.5;
     color: $third-text-dark-color;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__link--desktop_index {

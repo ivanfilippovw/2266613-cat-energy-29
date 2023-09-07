@@ -204,7 +204,12 @@
     background-size: 32px 10px;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-image: url("./../img/svg/stack/stack.svg#program-long-arrow-icon");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

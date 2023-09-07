@@ -145,6 +145,15 @@
   @media (min-width: $desktop-above) {
     width: 169px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $second-background-color-hover;
+  }
+
+  &:active {
+    background-color: $second-background-color-hover;
+  }
 }
 
 .more__button-link--nojs {

@@ -6,6 +6,7 @@ $font-second: oswald, arial, sans-serif;
 $base-dark-color: #000000;
 $base-light-color: #ffffff;
 $branded-color: #68b738;
+$branded-color-hover: #5eaa2f;
 $hero-background-left: #64a73c;
 $hero-background-right: #62a53a;
 
@@ -19,6 +20,7 @@ $catalog-product-card-title-color: #222222;
 // backgrounds colors
 $base-background-light-color: #ffffff;
 $second-background-color: #f2f2f2;
+$second-background-color-hover: #ebebeb;
 $example-background-color: #eaeaea;
 
 // border colors
@@ -27,6 +29,7 @@ $second-border-color: #ebebeb;
 $third-border-color: #cdcdcd;
 $fourth-border-color: #e6e6e6;
 $input-border-color: #e7e7e7;
+$checkbox-border-color-hover: #bababa;
 
 // svg colors
 $svg-icons-color: #666666;
@@ -34,6 +37,10 @@ $svg-logo-text-color: #111111;
 
 // item colors
 $more-plus-color: #d3d3d3;
+
+// error color
+
+$error-color: #ff8282;
 
 // viewports
 $mobile-xs-above: 481px;
