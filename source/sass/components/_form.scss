@@ -1,18 +1,18 @@
 .form {
   font-size: 16px;
   line-height: 1.12;
-  overflow: hidden;
+  // overflow: hidden;
 
   @media (min-width: $mobile-above) {
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-size: 20px;
     line-height: 1.5;
   }
 
   @media (min-width: $desktop-above) {
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -21,9 +21,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   row-gap: 12px;
-  padding-right: 20px;
   padding-bottom: 24px;
-  padding-left: 20px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $mobile-above) {
@@ -92,6 +90,13 @@
   }
 }
 
+// .form__meta-wrapper > .form__input::-webkit-outer-spin-button,
+// .form__meta-wrapper > .form__input::-webkit-inner-spin-button, {
+//   -webkit-appearance: none;
+//           appearance: none;
+//   margin: 0;
+// }
+
 .form__meta-wrapper > .form__input::placeholder {
   font-family: $font-second;
   font-size: 16px;
@@ -113,9 +118,7 @@
   flex-direction: column;
   row-gap: 13px;
   padding-top: 22px;
-  padding-right: 20px;
   padding-bottom: 19px;
-  padding-left: 20px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $mobile-above) {
@@ -188,9 +191,7 @@
   flex-direction: column;
   row-gap: 14px;
   padding-top: 26px;
-  padding-right: 20px;
   padding-bottom: 24px;
-  padding-left: 20px;
 
   @media (min-width: $mobile-above) {
     row-gap: 20px;
@@ -246,8 +247,8 @@
   position: absolute;
   z-index: -1;
   top: 28%;
-  left: -50%;
-  width: 150vw;
+  left: -110%;
+  width: 250vw;
   height: 2px;
   background-color: $branded-color;
 
@@ -307,13 +308,57 @@
 // }
 
 .form__contacts > .form__contacts-wrapper {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   column-gap: 13px;
 }
 
+.form__contacts > .form__contacts-wrapper:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  right: 13px;
+  width: 19px;
+  height: 15px;
+  display: block;
+  // -webkit-mask-repeat: no-repeat;
+  // -webkit-mask-position: center;
+  // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+  mask-repeat: no-repeat;
+  mask-position: right;
+  mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+  background-color: $catalog-product-card-title-color;
+}
+
+.form__contacts-wrapper:focus-within:nth-of-type(1)::before {
+  background-color: $branded-color;
+}
+
+.form__contacts > .form__contacts-wrapper:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  right: 13px;
+  width: 19px;
+  height: 15px;
+  display: block;
+  // -webkit-mask-repeat: no-repeat;
+  // -webkit-mask-position: center;
+  // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+  mask-repeat: no-repeat;
+  mask-position: right;
+  mask-image: url("./../img/svg/stack/stack.svg#form-phone-icon");
+  background-color: $catalog-product-card-title-color;
+}
+
+.form__contacts-wrapper:focus-within:nth-of-type(2)::before {
+  background-color: $branded-color;
+}
+
+
 .form__contacts-wrapper > .form__label {
   position: relative;
+  flex-shrink: 0;
   font-family: $font-second;
   text-transform: uppercase;
   color: $second-text-dark-color;
@@ -322,6 +367,7 @@
 .form__contacts-wrapper > .form__input {
   order: 2;
   flex-grow: 1;
+  width: 100%;
   padding-top: 14px;
   padding-right: 46px;
   padding-bottom: 13px;
@@ -368,42 +414,60 @@
   }
 }
 
-.form__contacts-wrapper > .form__label--email::before {
-  content: "";
-  position: absolute;
-  top: 17%;
-  right: -68vw;
-  z-index: 2;
-  width: 19px;
-  height: 15px;
-  display: block;
-  // -webkit-mask-repeat: no-repeat;
-  // -webkit-mask-position: center;
-  // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
-  mask-repeat: no-repeat;
-  mask-position: right;
-  mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
-  background-color: $catalog-product-card-title-color;
+// .form__contacts-wrapper > .form__label--email::before {
+//   content: "";
+//   position: absolute;
+//   top: 17%;
+//   right: -68vw;
+//   z-index: 2;
+//   width: 19px;
+//   height: 15px;
+//   display: block;
+//   // -webkit-mask-repeat: no-repeat;
+//   // -webkit-mask-position: center;
+//   // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+//   mask-repeat: no-repeat;
+//   mask-position: right;
+//   mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+//   background-color: $catalog-product-card-title-color;
+// }
 
-  @media (min-width: $mobile-xs-above) {
-    top: 0%;
-    right: -78vw;
-  }
+// .form__contacts-wrapper > .form__label--email::before {
+//   content: "";
+//   position: absolute;
+//   top: 17%;
+//   right: -68vw;
+//   z-index: 2;
+//   width: 19px;
+//   height: 15px;
+//   display: block;
+//   // -webkit-mask-repeat: no-repeat;
+//   // -webkit-mask-position: center;
+//   // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+//   mask-repeat: no-repeat;
+//   mask-position: right;
+//   mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+//   background-color: $catalog-product-card-title-color;
 
-  @media (min-width: $mobile-s-above) {
-    right: -65vw;
-  }
+//   @media (min-width: $mobile-xs-above) {
+//     top: 0%;
+//     right: -78vw;
+//   }
 
-  @media (min-width: $mobile-above) {
-    top: 23%;
-    right: -71.8vw;
-  }
+//   @media (min-width: $mobile-s-above) {
+//     right: -65vw;
+//   }
 
-  @media (min-width: $desktop-above) {
-    top: 23%;
-    right: -34vw;
-  }
-}
+//   @media (min-width: $mobile-above) {
+//     top: 23%;
+//     right: -71.8vw;
+//   }
+
+//   @media (min-width: $desktop-above) {
+//     top: 23%;
+//     right: -34vw;
+//   }
+// }
 
 .form__input--email:focus + .form__label--email::before {
   background-color: $branded-color;
@@ -413,40 +477,40 @@
   background-color: $error-color;
 }
 
-.form__contacts-wrapper > .form__label--phone::before {
-  content: "";
-  position: absolute;
-  right: -63vw;
-  z-index: 2;
-  width: 18px;
-  height: 18px;
-  display: block;
-  // -webkit-mask-repeat: no-repeat;
-  // -webkit-mask-position: center;
-  // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
-  mask-repeat: no-repeat;
-  mask-position: right;
-  mask-image: url("./../img/svg/stack/stack.svg#form-phone-icon");
-  background-color: $catalog-product-card-title-color;
+// .form__contacts-wrapper > .form__label--phone::before {
+//   content: "";
+//   position: absolute;
+//   right: -63vw;
+//   z-index: 2;
+//   width: 18px;
+//   height: 18px;
+//   display: block;
+//   // -webkit-mask-repeat: no-repeat;
+//   // -webkit-mask-position: center;
+//   // -webkit-mask-image: url("./../img/svg/stack/stack.svg#form-email-icon");
+//   mask-repeat: no-repeat;
+//   mask-position: right;
+//   mask-image: url("./../img/svg/stack/stack.svg#form-phone-icon");
+//   background-color: $catalog-product-card-title-color;
 
-  @media (min-width: $mobile-xs-above) {
-    right: -75vw;
-  }
+//   @media (min-width: $mobile-xs-above) {
+//     right: -75vw;
+//   }
 
-  @media (min-width: $mobile-s-above) {
-    right: -63vw;
-  }
+//   @media (min-width: $mobile-s-above) {
+//     right: -63vw;
+//   }
 
-  @media (min-width: $mobile-above) {
-    top: 13%;
-    right: -69.2vw;
-  }
+//   @media (min-width: $mobile-above) {
+//     top: 13%;
+//     right: -69.2vw;
+//   }
 
-  @media (min-width: $desktop-above) {
-    top: 23%;
-    right: -32.7vw;
-  }
-}
+//   @media (min-width: $desktop-above) {
+//     top: 23%;
+//     right: -32.7vw;
+//   }
+// }
 
 .form__input--phone:focus + .form__label--phone::before {
   background-color: $branded-color;
@@ -478,9 +542,7 @@
 }
 
 .form__comment {
-  padding-right: 20px;
   padding-bottom: 23px;
-  padding-left: 20px;
 
   @media (min-width: $mobile-above) {
     padding-right: 0;
@@ -529,8 +591,8 @@
   position: absolute;
   z-index: -1;
   top: 50%;
-  left: -50%;
-  width: 150vw;
+  left: -250%;
+  width: 250vw;
   height: 2px;
   background-color: $branded-color;
 
@@ -611,9 +673,7 @@
 }
 
 .form__additional {
-  padding-right: 20px;
   padding-bottom: 34px;
-  padding-left: 20px;
 
   @media (min-width: $mobile-above) {
     padding-right: 0;
@@ -657,8 +717,8 @@
   position: absolute;
   z-index: -1;
   top: 50%;
-  left: -50%;
-  width: 150vw;
+  left: -250%;
+  width: 250vw;
   height: 2px;
   background-color: $branded-color;
 

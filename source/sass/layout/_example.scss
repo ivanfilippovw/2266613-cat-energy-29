@@ -1,35 +1,35 @@
 .example {
   position: relative;
   padding-top: 25px;
-  padding-right: 20px;
+  // padding-right: 20px;
   padding-bottom: 40px;
-  padding-left: 20px;
+  // padding-left: 20px;
   background-color: $example-background-color;
 
   @media (min-width: $mobile-above) {
     padding-top: 45px;
-    padding-right: 30px;
+    // padding-right: 30px;
     padding-bottom: 101px;
-    padding-left: 30px;
+    // padding-left: 30px;
     background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 57.3%, $example-background-color 57.3%, $example-background-color 100%);
   }
 
   @media (min-width: $desktop-above) {
     padding-top: 0;
-    padding-right: 110px;
+    // padding-right: 110px;
     padding-bottom: 68px;
-    padding-left: 110px;
+    // padding-left: 110px;
     background-image: linear-gradient(to bottom, $base-background-light-color 0%, $base-background-light-color 23%, $example-background-color 23%, $example-background-color 100%);
   }
 }
 
 .example > .container {
   @media (min-width: $mobile-s-above) {
-    width: 560px;
+    // width: 560px;
   }
 
   @media (min-width: $mobile-above) {
-    width: 100%;
+    // width: 100%;
   }
 
   @media (min-width: $desktop-above) {

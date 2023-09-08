@@ -1,7 +1,11 @@
-.contacts {
-  @media (min-width: $desktop-above) {
-    position: relative;
-  }
+.contacts.container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.contacts > .container {
+  position: relative;
 }
 
 .contacts--background {
@@ -11,7 +15,8 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   margin-right: auto;
   margin-left: auto;
 
@@ -21,7 +26,10 @@
 
   @media (min-width: $mobile-above) {
     width: initial;
-    padding: 61px 70px;
+    padding-top: 61px;
+    padding-right: 40px;
+    padding-bottom: 61px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-above) {

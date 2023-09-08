@@ -6,9 +6,15 @@
     align-items: center;
   }
 
+
   &:active {
     opacity: 0.3;
   }
+}
+
+.academy-link:hover > .academy-link__icon,
+.academy-link:focus > .academy-link__icon {
+  fill: $branded-color;
 }
 
 .academy-link__text {
@@ -29,9 +35,4 @@
 
 .academy-link__icon {
   fill: $svg-icons-color;
-
-  &:hover,
-  &:focus {
-    fill: $branded-color;
-  }
 }

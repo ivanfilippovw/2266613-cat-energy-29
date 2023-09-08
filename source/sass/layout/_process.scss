@@ -1,24 +1,24 @@
 .process {
-  padding-right: 20px;
+  // padding-right: 20px;
   padding-bottom: 48px;
-  padding-left: 20px;
+  // padding-left: 20px;
 
   @media (min-width: $mobile-s-above) {
-    width: 600px;
+    // width: 600px;
   }
 
   @media (min-width: $mobile-above) {
-    width: 100%;
-    padding-right: 30px;
+    // width: 100%;
+    // padding-right: 30px;
     padding-bottom: 45px;
-    padding-left: 30px;
+    // padding-left: 30px;
     border-bottom: 1px solid $fourth-border-color;
   }
 
   @media (min-width: $desktop-above) {
-    padding-right: 110px;
+    // padding-right: 110px;
     padding-bottom: 69px;
-    padding-left: 110px;
+    // padding-left: 110px;
     border-bottom: none;
   }
 }

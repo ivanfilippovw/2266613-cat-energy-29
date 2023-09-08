@@ -125,10 +125,13 @@
     </section>
     <section class="contacts contacts--background container">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+      <div class="container">
+        <div class="contacts__wrapper">
+          <p class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
       </div>
+      <!-- Добавить нижнему тегу div класс contacts__map-wrapper--nojs, чтобы отобразилась статическая карта -->
       <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)"
@@ -170,42 +173,48 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer container">
-    <svg class="main-footer__logo-text logo-text" width="128" height="24" aria-hidden="true" focusable="false">
-      <use xlink:href="./img/svg/stack/stack.svg#logo-text"></use>
-    </svg>
-    <ul class="main-footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#" target="_blank">
-          <span class="visually-hidden">Перейти в Вконтакте.</span>
-          <svg class="social__icon social__icon--vk" width="28" height="22" aria-hidden="true" focusable="false">
-            <use xlink:href="./img/svg/stack/stack.svg#social-vk-icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#" target="_blank">
-          <span class="visually-hidden">Перейти в Youtube.</span>
-          <svg class="social__icon social__icon--youtube" width="28" height="22" aria-hidden="true" focusable="false">
-            <use xlink:href="./img/svg/stack/stack.svg#social-youtube-icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#" target="_blank">
-          <span class="visually-hidden">Перейти в Телеграм.</span>
-          <svg class="social__icon social__icon--telegram" width="28" height="22" aria-hidden="true" focusable="false">
-            <use xlink:href="./img/svg/stack/stack.svg#social-telegram-icon"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <a class="main-footer__academy-link academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-      <span class="academy-link__text">HTML Academy</span>
-      <svg class="academy-link__icon" width="27" height="34" aria-hidden="true" focusable="false">
-        <use xlink:href="./img/svg/stack/stack.svg#htmlacademy-icon"></use>
-      </svg>
-    </a>
+  <footer class="main-footer">
+    <div class="container">
+      <a class="main-footer__main-link" href="#">
+        <svg class="main-footer__logo-text logo-text" width="128" height="24" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/svg/stack/stack.svg#logo-text"></use>
+        </svg>
+      </a>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank">
+            <span class="visually-hidden">Перейти в Вконтакте.</span>
+            <svg class="social__icon social__icon--vk" width="28" height="22" aria-hidden="true" focusable="false">
+              <use xlink:href="./img/svg/stack/stack.svg#social-vk-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank">
+            <span class="visually-hidden">Перейти в Youtube.</span>
+            <svg class="social__icon social__icon--youtube" width="28" height="22" aria-hidden="true" focusable="false">
+              <use xlink:href="./img/svg/stack/stack.svg#social-youtube-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank">
+            <span class="visually-hidden">Перейти в Телеграм.</span>
+            <svg class="social__icon social__icon--telegram" width="28" height="22" aria-hidden="true"
+              focusable="false">
+              <use xlink:href="./img/svg/stack/stack.svg#social-telegram-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="main-footer__academy-link academy-link" href="https://htmlacademy.ru/intensive/adaptive"
+        target="_blank">
+        <span class="academy-link__text">HTML Academy</span>
+        <svg class="academy-link__icon" width="27" height="34" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/svg/stack/stack.svg#htmlacademy-icon"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
   <script defer src="js/index.js"></script>
 </body>
