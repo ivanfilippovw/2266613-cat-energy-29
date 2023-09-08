@@ -39,7 +39,7 @@
           <a class="navigation__link navigation__link--active" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="main-header__hamburger hamburger" id="hamburger__button">
+      <button class="main-header__hamburger hamburger" id="hamburger__button" type="button">
         <span class="hamburger__line"></span>
         <span class="hamburger__line"></span>
         <span class="hamburger__line"></span>
@@ -54,15 +54,17 @@
         <div class="form__meta">
           <div class="form__meta-wrapper">
             <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Укажите имя кота" value="Барсик"
+              required>
           </div>
           <div class="form__meta-wrapper">
             <label class="form__label" for="weight">Вес (кг):*</label>
-            <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
+            <input class="form__input" type="number" name="weight" id="weight" placeholder="Укажите вес кота" value="7"
+              required>
           </div>
           <div class="form__meta-wrapper">
             <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__input" type="number" name="age" id="age" placeholder="7">
+            <input class="form__input" type="number" name="age" id="age" placeholder="Возраст кота" value="7">
           </div>
         </div>
         <div class="form__program">
@@ -82,15 +84,17 @@
         <div class="form__contacts">
           <h2 class="form__contacts-title">Контактные данные
             (владельца кота)</h2>
+          <!-- Добавить класс ошибки .form__contacts-wrapper--error элементу ниже, чтобы отобразить состояние input error -->
           <div class="form__contacts-wrapper">
+            <label class="form__label" for="email">E-mail:*</label>
             <input class="form__input form__input--email" type="email" name="email" id="email"
-              placeholder="kuklachev@gmail.com" required>
-            <label class="form__label form__label--email" for="email">E-mail:*</label>
+              placeholder="Укажите эл. почту" value="kuklachev@gmail.com" required>
           </div>
+          <!-- Добавить класс ошибки .form__contacts-wrapper--error элементу ниже, чтобы отобразить состояние input error -->
           <div class="form__contacts-wrapper">
+            <label class="form__label" for="phone">Телефон:*</label>
             <input class="form__input form__input--phone" type="tel" name="phone" id="phone"
-              placeholder="8 (960) 900-60-90" required>
-            <label class="form__label form__label--phone" for="phone">Телефон:*</label>
+              placeholder="Укажите номер телефона" value="8 (960) 900-60-90" required>
           </div>
         </div>
         <div class="form__comment">

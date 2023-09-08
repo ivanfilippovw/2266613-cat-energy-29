@@ -13,6 +13,13 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
+<!-- <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin>
+<link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin>
+
+меню вынести в верхний js
+Два файла: один для ранней загрузки в head: early-scripts, другой после построения DOM перед закрытием body: late-scripts.
+-->
+
 <body class="page__body page__body--nojs">
   <div class="page__body-hero-wrapper">
     <header class="main-header container">
@@ -40,7 +47,7 @@
             <a class="navigation__link navigation__link--desktop_index" href="form.html">Подбор программы</a>
           </li>
         </ul>
-        <button class="main-header__hamburger hamburger" id="hamburger__button">
+        <button class="main-header__hamburger hamburger" id="hamburger__button" type="button">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
