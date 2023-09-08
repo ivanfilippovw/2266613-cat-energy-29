@@ -1,38 +1,26 @@
 .additional {
   padding-top: 25px;
-  // padding-right: 20px;
   padding-bottom: 36px;
-  // padding-left: 20px;
-  // overflow: hidden;
-
-  @media (min-width: $mobile-s-above) {
-    // width: 600px;
-  }
 
   @media (min-width: $mobile-above) {
-    // width: 100%;
     padding-top: 67px;
-    // padding-right: 30px;
     padding-bottom: 75px;
-    // padding-left: 30px;
   }
 
   @media (min-width: $desktop-above) {
     display: grid;
     grid-template-areas: "title title" "list gift";
     align-items: center;
-    // width: 100%;
     padding-top: 0;
-    // padding-right: 110px;
     padding-bottom: 87px;
-    // padding-left: 110px;
   }
 }
 
 .additional__title {
   position: relative;
   left: -20px;
-  width: 266px;
+  width: 100%;
+  max-width: 266px;
   margin-top: 0;
   margin-bottom: 1px;
   padding-right: 20px;
@@ -43,12 +31,12 @@
   font-weight: 400;
   line-height: 1;
   color: $base-text-dark-color;
-  // border-bottom: 1px solid $third-border-color;
   background-color: $base-background-light-color;
 
   @media (min-width: $mobile-above) {
     left: 0;
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     margin-bottom: 80px;
     padding-right: 40px;
     padding-bottom: 0;
@@ -82,30 +70,6 @@
     top: 64%;
   }
 }
-
-// .additional__title::after {
-//   content: "";
-//   position: absolute;
-//   top: 15px;
-//   right: -20px;
-//   width: 54px;
-//   height: 2px;
-//   background-color: $branded-color;
-
-//   @media (min-width: $mobile-s-above) {
-//     right: -40px;
-//   }
-
-//   @media (min-width: $mobile-above) {
-//     top: 30%;
-//     right: -4%;
-//     width: 45%;
-//   }
-
-//   @media (min-width: $tablet-above) {
-//     right: -2%;
-//   }
-// }
 
 .additional__card-list {
   @include base-list-style;
@@ -211,7 +175,6 @@
     grid-area: meta;
     justify-self: end;
     column-gap: 55px;
-    // width: 223px;
     margin-top: 0;
     margin-bottom: 24px;
     line-height: 1.25;
@@ -220,7 +183,8 @@
   @media (min-width: $desktop-above) {
     display: flex;
     justify-content: space-between;
-    width: 285px;
+    width: 100%;
+    max-width: 285px;
     margin-top: 0;
     margin-right: 40px;
     margin-bottom: 0;
@@ -325,7 +289,8 @@
 }
 
 .additional__gift-wrapper p {
-  width: 161px;
+  width: 100%;
+  max-width: 161px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 43px;
@@ -361,7 +326,8 @@
   }
 
   @media (min-width: $desktop-above) {
-    width: 244px;
+    width: 100%;
+    max-width: 244px;
     min-height: 40px;
   }
 }

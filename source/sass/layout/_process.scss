@@ -1,24 +1,13 @@
 .process {
-  // padding-right: 20px;
   padding-bottom: 48px;
-  // padding-left: 20px;
-
-  @media (min-width: $mobile-s-above) {
-    // width: 600px;
-  }
 
   @media (min-width: $mobile-above) {
-    // width: 100%;
-    // padding-right: 30px;
     padding-bottom: 45px;
-    // padding-left: 30px;
     border-bottom: 1px solid $fourth-border-color;
   }
 
   @media (min-width: $desktop-above) {
-    // padding-right: 110px;
     padding-bottom: 69px;
-    // padding-left: 110px;
     border-bottom: none;
   }
 }
@@ -96,7 +85,7 @@
   }
 
   @media (min-width: $tablet-above) {
-    margin-right: 90px;// 95px по макету
+    margin-right: 90px;
   }
 
   &::before {
@@ -123,7 +112,7 @@
 
 .process__item:nth-child(1) {
   @media (min-width: $desktop-above) {
-    margin-right: 90px;// 95px по макету
+    margin-right: 90px;
   }
 }
 
@@ -163,7 +152,7 @@
 
 .process__item:nth-child(2n) {
   @media (min-width: $desktop-above) {
-    margin-right: 80px;// 95px по макету
+    margin-right: 80px;
   }
 }
 
@@ -201,7 +190,7 @@
 
 .process__item:nth-child(3n) {
   @media (min-width: $desktop-above) {
-    margin-right: 78px;// 95px по макету
+    margin-right: 78px;
   }
 }
 
@@ -241,7 +230,7 @@
 
 .process__item:nth-child(4n) {
   @media (min-width: $desktop-above) {
-    margin-right: 0;// 95px по макету
+    margin-right: 0;
   }
 }
 

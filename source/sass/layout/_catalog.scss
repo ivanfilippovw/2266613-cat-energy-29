@@ -58,6 +58,7 @@
   @media (min-width: $mobile-above) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 60px;
     padding-right: 30px;
     padding-left: 30px;

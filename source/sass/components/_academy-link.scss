@@ -21,7 +21,8 @@
   position: absolute;
   top: 76%;
   left: 24%;
-  width: 114px;
+  width: 100%;
+  max-width: 114px;
   font-size: 16px;
   line-height: 1.25;
   color: $second-text-dark-color;
