@@ -1,14 +1,3 @@
-// .slider__image {
-//   display: block;
-
-//   @media (min-width: $mobile-above) {
-//     width: 560px;
-//     height: 512px;
-//     margin-right: auto;
-//     margin-left: auto;
-//   }
-// }
-
 .slider {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -24,13 +13,7 @@
   }
 }
 
-// style="width: 50%;
-
 .slider__before-wrapper {
-  // position: absolute;
-  // z-index: 2;
-  // top: 0;
-  // left: 0;
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -39,10 +22,6 @@
 }
 
 .slider__after-wrapper {
-  // position: absolute;
-  // z-index: 1;
-  // top: 0;
-  // left: 0;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -77,13 +56,30 @@
   z-index: 2;
   top: 50%;
   left: 50%;
+  display: block;
   width: 40px;
   height: 40px;
-  background-color: transparent;
-  background-image: url("../img/svg/stack/stack.svg#example-slider-control-button");
   border: none;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+}
+
+.slider__button-icon {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $svg-icons-color;
+}
+
+.slider__button:hover > .slider__button-icon,
+.slider__button:focus > .slider__button-icon {
+  color: $branded-color;
+}
+
+.slider__button:active > .slider__button-icon {
+  color: $branded-color-hover;
 }
 
 .slider__button-line {
@@ -95,14 +91,23 @@
   z-index: 1;
   width: 4px;
   background-color: $svg-icons-color;
+  border-radius: 2px;
 }
 
 .slider__button:hover,
 .slider__button:focus {
-  opacity: 0.8;
+  background-color: $branded-color;
 }
 
 .slider__button:hover + .slider__button-line,
 .slider__button:focus + .slider__button-line {
-  opacity: 0.8;
+  background-color: $branded-color;
+}
+
+.slider__button:active {
+  background-color: $branded-color-hover;
+}
+
+.slider__button:active + .slider__button-line {
+  background-color: $branded-color-hover;
 }

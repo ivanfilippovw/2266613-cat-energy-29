@@ -5,13 +5,24 @@
   @media (min-width: $mobile-xs-above) {
     align-items: center;
   }
+
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.academy-link:hover > .academy-link__icon,
+.academy-link:focus > .academy-link__icon {
+  fill: $branded-color;
 }
 
 .academy-link__text {
   position: absolute;
   top: 76%;
   left: 24%;
-  width: 113px;
+  width: 100%;
+  max-width: 114px;
   font-size: 16px;
   line-height: 1.25;
   color: $second-text-dark-color;

@@ -3,11 +3,13 @@
   align-items: center;
 
   @media (min-width: $mobile-above) {
-    width: 463px;
+    width: 100%;
+    max-width: 463px;
   }
 
   @media (min-width: $desktop-above) {
-    width: 478px;
+    width: 100%;
+    max-width: 478px;
   }
 }
 
@@ -101,6 +103,15 @@ body.open .navigation__list {
     font-size: 20px;
     line-height: 1.5;
     color: $third-text-dark-color;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

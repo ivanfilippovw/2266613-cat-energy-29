@@ -11,7 +11,8 @@
 
   @media (min-width: $mobile-above) {
     row-gap: 32px;
-    width: 324px;
+    width: 100%;
+    max-width: 324px;
     padding-top: 10px;
     padding-right: 37px;
     padding-bottom: 40px;
@@ -20,7 +21,8 @@
   }
 
   @media (min-width: $desktop-above) {
-    width: 245px;
+    width: 100%;
+    max-width: 245px;
     padding-right: 38px;
     padding-left: 38px;
   }
@@ -29,11 +31,11 @@
 .product-card__wrapper {
   display: flex;
   justify-content: center;
-  width: 100%;
 
   @media (min-width: $mobile-above) {
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-bottom: auto;
   }
 }
@@ -59,24 +61,23 @@
 .product-card__image {
   display: block;
   width: 100%;
-  // height: 100%;
   object-fit: scale-down;
 }
 
 .product-card__meta {
-  width: 100%;
-  max-width: 140px;
+  width: 140px;
 
   @media (min-width: $mobile-above) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
+    width: 100%;
   }
 }
 
 .product-card__title {
-  width: 76px;
+  width: 100%;
+  max-width: 76px;
   margin-top: 0;
   margin-bottom: 14px;
   font-family: $font-second;
@@ -87,7 +88,8 @@
   color: $catalog-product-card-title-color;
 
   @media (min-width: $mobile-above) {
-    width: 135px;
+    width: 100%;
+    max-width: 135px;
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
@@ -112,12 +114,14 @@
   @media (min-width: $mobile-above) {
     display: flex;
     flex-direction: column;
-    row-gap: 7px; // по макету первый гэп 5, второй 7...... для pp на margin переделать видимо
-    width: 250px;
+    row-gap: 7px;
+    width: 100%;
+    max-width: 250px;
   }
 
   @media (min-width: $desktop-above) {
-    width: 169px;
+    width: 100%;
+    max-width: 169px;
   }
 }
 
@@ -163,14 +167,16 @@
 
 .product-card__button.button--order {
   @media (min-width: $desktop-above) {
-    width: 169px;
+    width: 100%;
+    max-width: 169px;
     height: 40px;
   }
 }
 
 .product-card__button-link {
   display: block;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   min-height: 40px;
   padding: 10px 40px;
   font-family: $font-second;
@@ -182,10 +188,21 @@
   background-color: $branded-color;
 
   @media (min-width: $mobile-above) {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
   }
 
   @media (min-width: $desktop-above) {
-    width: 169px;
+    width: 100%;
+    max-width: 169px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $branded-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

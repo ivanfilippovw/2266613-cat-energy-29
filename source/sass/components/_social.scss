@@ -11,3 +11,16 @@
 .social__link {
   display: inline-flex;
 }
+
+.social__icon {
+  fill: $svg-icons-color;
+
+  &:hover,
+  &:focus {
+    fill: $branded-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

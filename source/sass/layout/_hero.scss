@@ -1,8 +1,6 @@
 .hero {
   position: relative;
   padding-top: 27px;
-  padding-right: 20px;
-  padding-left: 20px;
   background-image: url("./../img/hero/hero-mobile-bg@1x.png"), linear-gradient(to right, $hero-background-left, $hero-background-right);
   background-position: top center;
   background-repeat: no-repeat;
@@ -13,16 +11,12 @@
   }
 
   @media (min-width: $mobile-above) {
-    padding-top: 51px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-top: 46px;
     background-image: none;
   }
 
   @media (min-width: $desktop-above) {
-    padding-top: 96px;
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-top: 90px;
   }
 }
 
@@ -37,7 +31,8 @@
   color: $base-text-light-color;
 
   @media (min-width: $mobile-above) {
-    width: 416px;
+    width: 100%;
+    max-width: 416px;
     margin-bottom: 40px;
     margin-left: 90px;
     font-size: 60px;
@@ -63,7 +58,8 @@
   text-transform: uppercase;
 
   @media (min-width: $mobile-above) {
-    width: 416px;
+    width: 100%;
+    max-width: 416px;
     margin-bottom: 21px;
     margin-left: 90px;
     font-size: 20px;
@@ -92,7 +88,7 @@
 
   @media (min-width: $desktop-above) {
     position: absolute;
-    top: 4.5%;
+    top: 2.5%;
     left: 38.5%;
     width: 552px;
     height: 499px;
@@ -105,14 +101,16 @@
 
   @media (min-width: $mobile-above) {
     position: absolute;
-    top: 32.75%;
+    top: 32.3%;
     left: 15.6%;
+  }
+
+  @media (min-width: $tablet-s-above) {
+    left: 17.6%;
   }
 
   @media (min-width: $desktop-above) {
     position: static;
-    // top: 115%;
-    // left: 13.8%;
     margin-right: 0;
     margin-left: 80px;
   }
@@ -131,12 +129,3 @@
     }
   }
 }
-
-// .page__body-hero-wrapper {
-//   @media (min-width: $desktop-above) {
-//     min-height: 694px;
-//     background-image: linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 100%), url("./../img/hero/hero-desktop-background.png");
-//     background-repeat: no-repeat;
-//     background-size: 50% 100%, cover;
-//   }
-// }

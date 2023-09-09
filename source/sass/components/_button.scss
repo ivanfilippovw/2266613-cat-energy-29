@@ -1,12 +1,11 @@
 .button {
   display: block;
   width: 280px;
-  // height: 40px;
   min-height: 40px;
   padding: 8px 40px;
   font-family: $font-second;
   font-size: 14px;
-  line-height: 1.28; // 1.8 и становится текст ровно в кнопке
+  line-height: 1.28;
   text-transform: uppercase;
   text-align: center;
   color: $base-text-light-color;
@@ -19,13 +18,23 @@
   line-height: 1.25;
 
   @media (min-width: $mobile-above) {
-    width: 250px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-above) {
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     min-height: 52px;
     font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $branded-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -40,7 +49,8 @@
   background-color: $second-background-color;
 
   @media (min-width: $mobile-above) {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
   }
 }
 
@@ -49,11 +59,20 @@
   line-height: 1.25;
 
   @media (min-width: $mobile-above) {
-    width: 244px;
+    width: 100%;
+    max-width: 244px;
     min-height: 54px;
     padding: 14px 26px;
     font-size: 20px;
-    // line-height: 1;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $branded-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -64,11 +83,22 @@
   @media (min-width: $mobile-above) {
     font-size: 20px;
     line-height: 1.3;
-    width: 284px;
+    width: 100%;
+    max-width: 284px;
     min-height: 54px;
   }
 
   @media (min-width: $desktop-above) {
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $branded-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

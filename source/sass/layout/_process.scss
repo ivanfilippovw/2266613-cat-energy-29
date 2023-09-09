@@ -1,24 +1,13 @@
 .process {
-  padding-right: 20px;
   padding-bottom: 48px;
-  padding-left: 20px;
-
-  @media (min-width: $mobile-s-above) {
-    width: 600px;
-  }
 
   @media (min-width: $mobile-above) {
-    width: 100%;
-    padding-right: 30px;
     padding-bottom: 45px;
-    padding-left: 30px;
     border-bottom: 1px solid $fourth-border-color;
   }
 
   @media (min-width: $desktop-above) {
-    padding-right: 110px;
     padding-bottom: 69px;
-    padding-left: 110px;
     border-bottom: none;
   }
 }
@@ -44,6 +33,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  counter-reset: section;
 
   @media (min-width: $mobile-above) {
     flex-direction: row;
@@ -86,6 +76,13 @@
       height: 80px;
     }
   }
+
+  &::after {
+    @media (min-width: $mobile-above) {
+      counter-increment: section;
+      content: counter(section);
+    }
+  }
 }
 
 .process__item:nth-child(1n) {
@@ -96,7 +93,7 @@
   }
 
   @media (min-width: $tablet-above) {
-    margin-right: 90px;// 95px по макету
+    margin-right: 90px;
   }
 
   &::before {
@@ -108,7 +105,8 @@
 
   &::after {
     @media (min-width: $mobile-above) {
-      content: "1";
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       z-index: -1;
       top: 0;
@@ -123,7 +121,7 @@
 
 .process__item:nth-child(1) {
   @media (min-width: $desktop-above) {
-    margin-right: 90px;// 95px по макету
+    margin-right: 90px;
   }
 }
 
@@ -148,7 +146,8 @@
 
   &::after {
     @media (min-width: $mobile-above) {
-      content: "2";
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       z-index: -1;
       top: 0;
@@ -163,7 +162,7 @@
 
 .process__item:nth-child(2n) {
   @media (min-width: $desktop-above) {
-    margin-right: 80px;// 95px по макету
+    margin-right: 80px;
   }
 }
 
@@ -186,7 +185,8 @@
 
   &::after {
     @media (min-width: $mobile-above) {
-      content: "3";
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       z-index: -1;
       top: 0;
@@ -201,7 +201,7 @@
 
 .process__item:nth-child(3n) {
   @media (min-width: $desktop-above) {
-    margin-right: 78px;// 95px по макету
+    margin-right: 78px;
   }
 }
 
@@ -220,7 +220,8 @@
 
   &::after {
     @media (min-width: $mobile-above) {
-      content: "4";
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       z-index: -1;
       top: 0;
@@ -241,7 +242,7 @@
 
 .process__item:nth-child(4n) {
   @media (min-width: $desktop-above) {
-    margin-right: 0;// 95px по макету
+    margin-right: 0;
   }
 }
 

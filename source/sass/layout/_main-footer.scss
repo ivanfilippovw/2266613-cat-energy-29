@@ -1,19 +1,25 @@
 .main-footer {
+  background-color: $second-background-color;
+}
+
+.main-footer > .container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
-  background-color: $second-background-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $mobile-above) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-above) {
-    padding: 66px 110px;
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }
 
@@ -21,14 +27,24 @@
   @media (min-width: $mobile-above) {
     margin-right: 52px;
   }
+
+  &:hover,
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 .main-footer__social {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 280px;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 14px;
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -48,7 +64,8 @@
   margin-left: auto;
 
   @media (min-width: $mobile-xs-above) {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     justify-content: space-between;
     margin-left: initial;
   }
