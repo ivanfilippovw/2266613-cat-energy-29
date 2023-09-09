@@ -62,10 +62,24 @@
   border: none;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  mask-image: url("../img/svg/stack/stack.svg#example-slider-control-button");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: $base-light-color;
+}
+
+.slider__button-icon {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $svg-icons-color;
+}
+
+.slider__button:hover > .slider__button-icon,
+.slider__button:focus > .slider__button-icon {
+  color: $branded-color;
+}
+
+.slider__button:active > .slider__button-icon {
+  color: $branded-color-hover;
 }
 
 .slider__button-line {
@@ -77,6 +91,7 @@
   z-index: 1;
   width: 4px;
   background-color: $svg-icons-color;
+  border-radius: 2px;
 }
 
 .slider__button:hover,
