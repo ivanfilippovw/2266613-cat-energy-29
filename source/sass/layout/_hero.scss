@@ -115,17 +115,3 @@
     margin-left: 80px;
   }
 }
-
-.page__body-hero-wrapper {
-  @media (min-width: $desktop-above) {
-    min-height: 694px;
-    background-image: url("./../img/hero/hero-desktop-bg@1x.png"), linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 50%, $hero-background-left 50%, $hero-background-right 100%);
-    background-position-x: 100%, 100%;
-    background-repeat: no-repeat;
-    background-size: contain, 100% 694px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("./../img/hero/hero-desktop-bg@2x.png"), linear-gradient(to right, $base-background-light-color 0%, $base-background-light-color 50%, $hero-background-left 50%, $hero-background-right 100%);
-    }
-  }
-}
