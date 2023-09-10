@@ -1,0 +1,26 @@
+.page__body--nojs .main-header {
+  flex-direction: column;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.page__body--nojs .hamburger {
+  display: none;
+}
+
+.page__body--nojs .logo {
+  width: 100%;
+  max-width: 250px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.page__body--nojs .logo__text {
+  position: relative;
+}
+
+.page__body--nojs .navigation__list {
+  position: static;
+  margin-top: 15px;
+}
