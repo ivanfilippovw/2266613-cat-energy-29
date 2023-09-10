@@ -93,14 +93,15 @@
 
 // стили, чтобы убрать стерлочки, которые изначально стоят у браузера в инпутах, чтобы увеличиать или уменьшать количество
 
-/* stylelint-disable */
 .form__meta-wrapper > .form__input::-webkit-outer-spin-button,
-.form__meta-wrapper > .form__input::-webkit-inner-spin-button, {
-  -webkit-appearance: none;
-          appearance: none;
+.form__meta-wrapper > .form__input::-webkit-inner-spin-button {
+  appearance: none;
   margin: 0;
 }
-/* stylelint-enable */
+
+.form__meta-wrapper > .form__input[type="number"] {
+  appearance: textfield;
+}
 
 .form__meta-wrapper > .form__input::placeholder {
   font-family: $font-second;
